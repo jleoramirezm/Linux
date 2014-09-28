@@ -35,6 +35,7 @@ NOTE: **This scrip installs the following programs**
 - **Samba**
 - **Zssh** - program for interactively transferring files to a remote machine while using the secure  shell
 - **Cloc**
+- **pyrenamer**
 
 ```sh
 # Use Cloc

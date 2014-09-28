@@ -178,3 +178,8 @@ function_message_title '- **Git Cloc**'
 git clone https://github.com/kaelzhang/git-cloc.git
 cd "${SCRIPT_PATH}/git-cloc/"
 sudo make install
+
+# - **pyrenamer**
+# Rename Files
+function_message_title '- **pyrenamer**'
+sudo apt-get install -y pyrenamer
