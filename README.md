@@ -105,7 +105,7 @@ Download and save the script file, make this file executable and run it:
 
 ```sh
 # One line installer
-SCRIPT="nodejs.zsh.sh" && wget https://raw.githubusercontent.com/Mayccoll/Linux/master/$SCRIPT && chmod +x $SCRIPT && ./$SCRIPT && rm $SCRIPT
+SCRIPT="install.nodejs.sh" && wget https://raw.githubusercontent.com/Mayccoll/Linux/master/$SCRIPT && chmod +x $SCRIPT && ./$SCRIPT && rm $SCRIPT
 ```
 
 NOTE: **This scrip installs Nodejs and the following packages**
@@ -137,7 +137,7 @@ Download and save the script file, make this file executable and run it:
 
 ```sh
 # One line installer
-SCRIPT="nodejs.rmate.sh" && wget https://raw.githubusercontent.com/Mayccoll/Linux/master/$SCRIPT && chmod +x $SCRIPT && ./$SCRIPT && rm $SCRIPT
+SCRIPT="install.rmate.sh" && wget https://raw.githubusercontent.com/Mayccoll/Linux/master/$SCRIPT && chmod +x $SCRIPT && ./$SCRIPT && rm $SCRIPT
 ```
 
 NOTE: **This scrip installs rmate**
