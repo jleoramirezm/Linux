@@ -16,26 +16,34 @@ Download and save the script file, make this file executable and run it:
 SCRIPT="install.essentials.sh" && wget https://raw.githubusercontent.com/Mayccoll/Linux/master/$SCRIPT && chmod +x $SCRIPT && ./$SCRIPT && rm $SCRIPT
 ```
 
-NOTE: **This scrip installs the following programs**
+NOTE: **This scrip installs the following packages**
 
-- **Progress bar**
-- **Extras**
-- **Essential tools for compiling from sources**
-- **Puppet**
-- **Curl**
-- **Git**
-- **Git Extras**
-- **Gufw** - Firewall
-- **Viewnior** - Image viewer
-- **Shutter**
-- **DaemonFSk** - DaemonFS is a real time file watcher.
-- **Install Pantheon Desktop Environment**
-- **Grub Customizer**
 - **Cairo-Dock**
-- **Samba**
-- **Zssh** - program for interactively transferring files to a remote machine while using the secure  shell
 - **Cloc**
+- **Curl**
+- **DaemonFSk**
+- **Essential tools for compiling from sources**
+- **Extras**
+- **Filezilla**
+- **Folder Color**
+- **Git Cloc**
+- **Git Extras**
+- **Git**
+- **Grub Customizer**
+- **Gufw**
+- **Install Pantheon Desktop Environment**
+- **Packing software**
+- **Progress bar**
+- **Puppet**
 - **pyrenamer**
+- **Python**
+- **rmate**
+- **Ruby**
+- **Samba**
+- **shutter**
+- **update**
+- **Viewnior**
+- **zssh**
 
 ```sh
 # Use Cloc
