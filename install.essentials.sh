@@ -179,7 +179,16 @@ git clone https://github.com/kaelzhang/git-cloc.git
 cd "${SCRIPT_PATH}/git-cloc/"
 sudo make install
 
+
 # - **pyrenamer**
 # Rename Files
 function_message_title '- **pyrenamer**'
 sudo apt-get install -y pyrenamer
+
+
+# - **Folder Color**
+function_message_title '- **Folder Color**'
+sudo add-apt-repository -y ppa:costales/folder-color
+sudo apt-get update
+sudo apt-get install -y folder-color-nemo
+nemo -q
