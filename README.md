@@ -6,17 +6,23 @@ This repo is actually for personal use, but feel free to use it if you find it u
 ## Fast Install
 
 ```sh
-  # essentials
-  wget -O xt  http://git.io/-BDg8Q && chmod +x "xt" && ./xt && rm xt
-  
+  # Eessentials
+  wget -O xt  http://git.io/-BDg8Q && chmod +x xt && ./xt && rm xt
+
+  # Programing
+  wget -O xt  http://git.io/JufTRg && chmod +x xt && ./xt && rm xt
+
+  # Extras
+  wget -O xt  http://git.io/OBOaLQ && chmod +x xt && ./xt && rm xt
+
   # Nodejs
-  wget -O xt  http://git.io/R7LgJg && chmod +x "xt" && ./xt && rm xt
-  
+  wget -O xt  http://git.io/R7LgJg && chmod +x xt && ./xt && rm xt
+
   # rMate
-  wget -O xt  http://git.io/gE58Qg && chmod +x "xt" && ./xt && rm xt
-  
+  wget -O xt  http://git.io/gE58Qg && chmod +x xt && ./xt && rm xt
+
   # zsh
-  wget -O xt  http://git.io/UBJMHQ && chmod +x "xt" && ./xt && rm xt
+  wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
 ```
 
 ## Install Essentials
