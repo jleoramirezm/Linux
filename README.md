@@ -3,6 +3,13 @@
 Small collection of basic script for installing some essential programs for Linux Mint.
 This repo is actually for personal use, but feel free to use it if you find it useful.
 
+## Fast Install
+
+```sh
+  # essentials
+  wget -O - http://git.io/-BDg8Q | bash
+```
+
 ## Install Essentials
 
 Download and save the script file, make this file executable and run it:
