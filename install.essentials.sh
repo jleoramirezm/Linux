@@ -36,23 +36,18 @@ echo 'Dpkg:Progress-Fancy "1";' | sudo tee /etc/apt/apt.conf.d/99progressbar
 # - **Extras**
 function_message_title '- **Extras**'
 sudo apt-get install -y software-properties-common python-software-properties
-
 wait
 
 sudo apt-get -f install -y
-
 wait
 
 sudo ln -sf /lib/x86_64-linux-gnu/libudev.so.1 /lib/x86_64-linux-gnu/libudev.so.0
-
 wait
 
 sudo apt-get install -y autoconf automake  build-essential libxslt1-dev re2c libxml2 libxml2-dev bison libbz2-dev libreadline-dev libfreetype6 libfreetype6-dev libpng12-0 libpng12-dev libjpeg-dev libjpeg8-dev libjpeg8  libgd-dev libgd3 libxpm4 libssl-dev openssl gettext libgettextpo-dev libgettextpo0 libicu-dev libmhash-dev libmhash2 libmcrypt-dev libmcrypt4 python-software-properties software-properties-common g++ build-essential libssl-dev pkg-config
-
 wait
 
 sudo apt-get install -y linux-headers-generic dkms
-
 wait
 
 # - **Essential tools for compiling from sources**

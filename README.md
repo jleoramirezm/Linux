@@ -7,7 +7,16 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 ```sh
   # essentials
-  wget -O - http://git.io/-BDg8Q | bash
+  wget -O xt  http://git.io/-BDg8Q && chmod +x "xt" && ./xt && rm xt
+  
+  # Nodejs
+  wget -O xt  http://git.io/R7LgJg && chmod +x "xt" && ./xt && rm xt
+  
+  # rMate
+  wget -O xt  http://git.io/gE58Qg && chmod +x "xt" && ./xt && rm xt
+  
+  # zsh
+  wget -O xt  http://git.io/UBJMHQ && chmod +x "xt" && ./xt && rm xt
 ```
 
 ## Install Essentials
