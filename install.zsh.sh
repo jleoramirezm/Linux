@@ -42,8 +42,21 @@ antigen-bundle arialdomartini/oh-my-git
 antigen-bundle zsh-users/zsh-history-substring-search
 antigen-bundle zsh-users/zsh-syntax-highlighting
 
-antigen theme Mayccoll/oh-my-git-themes arrow-green
+antigen theme Mayccoll/oh-my-git-themes dolar-arrow-green
 
 antigen-apply
 # |::::::::::::::::::<<<zsh
+EOF
+
+
+    # - **Install antigen - Add**
+cat <<-EOF >> ~/.zshrc
+# |::::::::::::::::::stars>>>
+echo '
+　 ･ ·̩　　 ｡　☆　　　ﾟ｡  ＊ 　 ｡*　　+　 　＊ 　･ ｡☆+　 　＊ 　･ ｡☆
+＊ 　 ｡*　　+　 　＊ 　･ ｡☆  　　　ﾟ･　　｡ﾟ･　　☆ﾟ　+  ｡　☆　　　ﾟ｡･ ·̩　　
+　☆　　　*　　　* 　 。  　 ･ ·̩　　 ｡　☆　　　ﾟ｡　☆　　　*　　　* 　　☆ﾟ　+ 
+　　　ﾟ･　　｡ﾟ･　　☆ﾟ　+ 　☆　　　*　　　* 　 。＊ 　 ｡*　　+　 　＊ 　･ ｡☆
+'
+# |::::::::::::::::::stars<<<
 EOF
