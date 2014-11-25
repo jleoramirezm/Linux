@@ -524,7 +524,7 @@ NOTE: **This scrip installs rmate**
 - **Get External IP**
 
 ```sh
-  $ curl http://ipecho.net/plain; echo
+  $ curl http://ipecho.net/plain
 
   $ lynx --dump http://ipecho.net/plain
 
