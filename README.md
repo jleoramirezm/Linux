@@ -321,7 +321,7 @@ NOTE: **This scrip installs rmate**
 ```bash
   $ sudo add-apt-repository -y ppa:ravefinity-project/ppa
   $ sudo apt-get update
-  $ sudo apt-get install -y ambiance-colors radiance-colors
+  $ sudo apt-get install -y radiance-colors ambiance-colors
 ```
 
 - **iOS 7**
