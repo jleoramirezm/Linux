@@ -9,15 +9,38 @@ sudo apt-get install -y zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | bash
 
 
+
+    # Delete text beetwen 2 words
+    # ==============================================
+FILEZSH="/.zshrc"
+WORD1='# |::::::::::::::::::>>>proftv' # |<=== Config This
+WORD2='# |::::::::::::::::::<<<proftv' # |<=== Config This
+
+sed -e "/${WORD1}/,/${WORD2}/d"  "${HOME}${FILEZSH}" > "${HOME}${FILEZSH}_tmp"
+cp "${HOME}${FILEZSH}_tmp" "${HOME}${FILEZSH}"
+rm "${HOME}${FILEZSH}_tmp"
+
+
     # - **Setting ZSH as the default shell (instead of bash)**
     # ==============================================
 
 if [[ $EUID -ne 0 ]]; then
+
 # no root
 cat <<-EOF >> $HOME/.bash_profile
+# |::::::::::::::::::>>>proftv
 export SHELL=/bin/zsh
 exec /bin/zsh -l
+# |::::::::::::::::::<<<proftv
 EOF
+
+else
+
+# root
+w=`which zsh` &&  h=`whoami` && sudo chsh -s $w $h
+
+fi
+
 
 
     # - **Install antigen**
