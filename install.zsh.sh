@@ -17,24 +17,17 @@ WHITE="\e[0;37m"
 
     # - 
     # ==============================================
-echo -e "${YELLOW}sudo apt-get update ?${RS}"
+echo -e "${YELLOW}Do you have ${RED}root ${YELLOW}permission ?${RS}"
 echo "Yes -> [1]"
-echo "Skip -> [2]"
+echo "No  -> [2]"
 read PRESSKEY
 if [[ $PRESSKEY -eq 1 ]] || [[ $PRESSKEY -eq "" ]]
   then
 sudo apt-get update
-fi
-
-echo -e "${YELLOW}Install zsh (sudo apt-get install -y zsh) ?${RS}"
-echo -e "if you are not ${RED}root press [2]${RS}"
-echo "Yes -> [1]"
-echo "Skip -> [2]"
-read PRESSKEY
-if [[ $PRESSKEY -eq 1 ]] || [[ $PRESSKEY -eq "" ]]
-  then
 sudo apt-get install -y zsh
 fi
+
+
 
     # - **Install Oh-My-ZSH**
     # ==============================================
@@ -44,7 +37,7 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 
     # Delete text beetwen 2 words
     # ==============================================
-FILEZSH="/.zshrc"
+FILEZSH="/.bash_profile"
 WORD1='# |::::::::::::::::::>>>proftv' # |<=== Config This
 WORD2='# |::::::::::::::::::<<<proftv' # |<=== Config This
 
