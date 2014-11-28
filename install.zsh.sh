@@ -21,8 +21,7 @@ echo -e "${YELLOW}Do you have ${RED}root ${YELLOW}permission ?${RS}"
 echo "Yes -> [1]"
 echo "No  -> [2]"
 read PRESSKEY
-if [[ $PRESSKEY -eq 1 ]] || [[ $PRESSKEY -eq "" ]]
-  then
+if [[ $PRESSKEY -eq 1 ]] || [[ $PRESSKEY -eq "" ]]; then
 sudo apt-get update
 sudo apt-get install -y zsh
 fi
@@ -59,6 +58,36 @@ exec /bin/zsh -l
 # |::::::::::::::::::<<<proftv
 EOF
 
+    # Delete text beetwen 2 words
+    # ==============================================
+FILEZSH="/.zshrc"
+WORD1='# |::::::::::::::::::>>>ohmyzsh' # |<=== Config This
+WORD2='# |::::::::::::::::::<<<ohmyzsh' # |<=== Config This
+
+sed -e "/${WORD1}/,/${WORD2}/d"  "${HOME}${FILEZSH}" > "${HOME}${FILEZSH}_tmp"
+cp "${HOME}${FILEZSH}_tmp" "${HOME}${FILEZSH}"
+rm "${HOME}${FILEZSH}_tmp"
+
+
+    # - **Install antigen - Add**
+    # ==============================================
+cat <<-EOF >> $HOME/.zshrc
+# |::::::::::::::::::>>>ohmyzsh
+
+# Path to your oh-my-zsh installation.
+export ZSH=\$HOME/.oh-my-zsh
+
+ZSH_THEME="robbyrussell"
+
+plugins=(git)
+
+source \$ZSH/oh-my-zsh.sh
+
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+
+# |::::::::::::::::::<<<ohmyzsh
+EOF
+
 else
 
 # root
@@ -66,6 +95,15 @@ w=`which zsh` &&  h=`whoami` && sudo chsh -s $w $h
 
 fi
 
+
+
+    # - 
+    # ==============================================
+echo -e "${YELLOW}Do you want install ${red}antigen ${YELLOW}?${RS}"
+echo "Yes -> [1]"
+echo "No  -> [2]"
+read PRESSKEY
+if [[ $PRESSKEY -eq 1 ]] || [[ $PRESSKEY -eq "" ]]; then
 
 
     # - **Install antigen**
@@ -226,6 +264,8 @@ antigen theme Mayccoll/oh-my-git-themes dolar-arrow-green
 antigen-apply
 # |::::::::::::::::::<<<zsh
 EOF
+
+fi
 
 
     # Delete text beetwen 2 words
