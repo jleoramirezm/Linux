@@ -25,6 +25,12 @@ This repo is actually for personal use, but feel free to use it if you find it u
   wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
 ```
 
+**Note:** if you get ERROR: certificate add ```--no-check-certificate``` 
+
+```sh
+  wget --no-check-certificate -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
+```
+
 ## Install Essentials
 
 Download and save the script file, make this file executable and run it:
