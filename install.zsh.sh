@@ -1,8 +1,40 @@
 #!/bin/bash
 
+    # - colors
+    # ==============================================
 
+# Reset color
+RS="\e[0m"
+# Basic Colors
+BLACK="\e[0;30m"
+RED="\e[0;31m"
+GREEN="\e[0;32m"
+YELLOW="\e[0;33m"
+BLUE="\e[0;34m"
+PURPLE="\e[0;35m"
+CYAN="\e[0;36m"
+WHITE="\e[0;37m"
+
+    # - 
+    # ==============================================
+echo -e "${YELLOW}sudo apt-get update ?${RS}"
+echo "Yes -> [1]"
+echo "Skip -> [2]"
+read PRESSKEY
+if [[ $PRESSKEY -eq 1 ]] || [[ $PRESSKEY -eq "" ]]
+  then
 sudo apt-get update
+fi
+
+echo -e "${YELLOW}Install zsh (sudo apt-get install -y zsh) ?${RS}"
+echo -e "if you are not ${RED}root press [2]${RS}"
+echo "Yes -> [1]"
+echo "Skip -> [2]"
+read PRESSKEY
+if [[ $PRESSKEY -eq 1 ]] || [[ $PRESSKEY -eq "" ]]
+  then
 sudo apt-get install -y zsh
+fi
 
     # - **Install Oh-My-ZSH**
     # ==============================================
