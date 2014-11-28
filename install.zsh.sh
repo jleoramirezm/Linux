@@ -11,7 +11,13 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 
     # - **Setting ZSH as the default shell (instead of bash)**
     # ==============================================
-w=`which zsh` &&  h=`whoami` && sudo chsh -s $w $h
+
+if [[ $EUID -ne 0 ]]; then
+# no root
+cat <<-EOF >> $HOME/.bash_profile
+export SHELL=/bin/zsh
+exec /bin/zsh -l
+EOF
 
 
     # - **Install antigen**
