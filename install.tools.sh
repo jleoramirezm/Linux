@@ -43,3 +43,9 @@ wait
 function_message_title '- **Mysql-Workbench**'
 sudo apt-get install -y mysql-workbench
 wait
+
+
+# - **Remmina**
+function_message_title '- **Remmina**'
+sudo apt-get install -y remmina remmina-common remmina-plugin-vnc remmina-plugin-nx remmina-plugin-telepathy
+wait

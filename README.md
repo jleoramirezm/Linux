@@ -40,6 +40,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # - Samba
       # - Filezilla
       # - mysql-workbench
+      # - Remmina
 
 
   # | Virtual tools | #
