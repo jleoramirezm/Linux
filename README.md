@@ -82,6 +82,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
   # rMate
   $ wget -O xt  http://git.io/gE58Qg && chmod +x xt && ./xt && rm xt
 
+
   # zsh
   $ wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
 ```
@@ -94,31 +95,11 @@ This repo is actually for personal use, but feel free to use it if you find it u
   wget --no-check-certificate -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
 ```
 
--------------------------------------------------------------------------------
-
-# Use of some commands
-
-- **Cloc**
-
-```sh
-  $ cloc .
-  $ cloc --exclude-lang=DTD,Lua,make,Python .
-  $ find . -name "*.php" | xargs cloc
-```
-
-- **Git Cloc**
-
-```sh
-    git cloc -r
-    git cloc
-    git cloc --month 2014-6
-```
-
 
 -------------------------------------------------------------------------------
 
 
-# More useful programs that are not included in scripts 
+## More useful programs that are not included in scripts 
 
 
 - **wkhtmltopdf**
@@ -217,34 +198,68 @@ This repo is actually for personal use, but feel free to use it if you find it u
   sudo apt install -y postgresql postgresql-client postgresql-contrib
 ```
 
+- **Meld**
+
+```sh
+  $ sudo apt install -y meld
+```
+
+- **gpick**
+
+```sh
+  $ sudo apt install -y gpick
+```
+
+- **qshutdown**
+
+```sh
+  $ sudo apt install -y qshutdown
+```
+
+- **imagemagick**
+
+```sh
+  $ sudo apt install -y imagemagick
+```
+
+- **Bless Hex Editor**
+
+```sh
+  $ sudo apt install -y bless
+```
+
+- **Luckybackup**
+
+```sh
+  $ sudo apt install -y luckybackup
+```
+
+- **Wine**
+
+```sh
+  $ sudo apt install -y wine
+```
 
 -------------------------------------------------------------------------------
 
-# **More nice apps**
+## **More nice apps**
 
 - Alsamixer
-- Angry IP Scanner -  http://angryip.org/
-- Bless Hex Editor
-- gpick
-- haroopad
-- imagemagic
-- luckybackup
-- meld
-- pac
-- pidgin
-- qshutdown
-- springseed
-- sublime text
-- timeshift
-- wine
-- Nitro Task
+- Angry IP Scanner  - http://angryip.org/
+- haroopad          - http://pad.haroopress.com/
+- Koala             - http://koala-app.com/
+- pac               - http://sourceforge.net/projects/pacmanager/files/
+- springseed        - http://getspringseed.com/
+- Sublime text      - http://www.sublimetext.com/3
+- timeshift         - http://www.teejeetech.in/p/timeshift.html
+- Nitro Task        - http://nitrotasks.com/#
 
 
 
 -------------------------------------------------------------------------------
 
 
-# Themes and Icons
+## Themes and Icons
 
 - **Ambiance ¬ Radiante**
 
@@ -313,6 +328,23 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 # Useful
 
+
+
+- **Cloc**
+
+```sh
+  $ cloc .
+  $ cloc --exclude-lang=DTD,Lua,make,Python .
+  $ find . -name "*.php" | xargs cloc
+```
+
+- **Git Cloc**
+
+```sh
+    git cloc -r
+    git cloc
+    git cloc --month 2014-6
+```
 
 ## Open ports
 
@@ -470,13 +502,6 @@ This repo is actually for personal use, but feel free to use it if you find it u
     # Remove file older than 7 days
     0 0 * * *     find /root/crons/logs -mtime +7 -exec rm {} \;
 ```
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ## Keymap cambiar techas
