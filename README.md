@@ -29,18 +29,21 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 
   # | Customize | #
+  wget -O xt  http://git.io/h9dVjw && chmod +x xt && ./xt && rm xt
       # - Install Pantheon Desktop Environment
       # - Grub Customizer
       # - Cairo-Dock
 
 
   # | Tools | #
+  wget -O xt  http://git.io/8yxL5Q && chmod +x xt && ./xt && rm xt
       # - Samba
       # - Filezilla
       # - mysql-workbench
 
 
   # | Virtual tools | #
+  wget -O xt  http://git.io/KnwTFw && chmod +x xt && ./xt && rm xt
       # - VirtualBox
       # - Puppet
       # - Docker
@@ -57,12 +60,12 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 
   # Python
-  wget -O xt  http://git.io/JufTRg && chmod +x xt && ./xt && rm xt
+  wget -O xt  http://git.io/S63sLQ && chmod +x xt && ./xt && rm xt
       # - Ruby
 
 
   # Ruby
-  wget -O xt  http://git.io/JufTRg && chmod +x xt && ./xt && rm xt
+  wget -O xt  http://git.io/ZFV0PA && chmod +x xt && ./xt && rm xt
       # - Ruby
 
 
