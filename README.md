@@ -7,7 +7,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 ```sh
   # | Basics | #
-  wget -O xt  http://git.io/Dncnzw && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/Dncnzw && chmod +x xt && ./xt && rm xt
       # - Progress bar
       # - Git
       # - Curl
@@ -16,7 +16,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 
   # | Eessentials | #
-  wget -O xt  http://git.io/-BDg8Q && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/-BDg8Q && chmod +x xt && ./xt && rm xt
       # - Extras
       # - Essential tools for compiling from sources
       # - Packing software
@@ -29,14 +29,14 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 
   # | Customize | #
-  wget -O xt  http://git.io/h9dVjw && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/h9dVjw && chmod +x xt && ./xt && rm xt
       # - Install Pantheon Desktop Environment
       # - Grub Customizer
       # - Cairo-Dock
 
 
   # | Tools | #
-  wget -O xt  http://git.io/8yxL5Q && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/8yxL5Q && chmod +x xt && ./xt && rm xt
       # - Samba
       # - Filezilla
       # - mysql-workbench
@@ -44,7 +44,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 
   # | Virtual tools | #
-  wget -O xt  http://git.io/KnwTFw && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/KnwTFw && chmod +x xt && ./xt && rm xt
       # - VirtualBox
       # - Puppet
       # - Docker
@@ -52,7 +52,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 
   # | Extras | #
-  wget -O xt  http://git.io/OBOaLQ && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/OBOaLQ && chmod +x xt && ./xt && rm xt
       # - Pyrenamer
       # - DaemonFSk
       # - Gufw
@@ -61,17 +61,17 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 
   # Python
-  wget -O xt  http://git.io/S63sLQ && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/S63sLQ && chmod +x xt && ./xt && rm xt
       # - Ruby
 
 
   # Ruby
-  wget -O xt  http://git.io/ZFV0PA && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/ZFV0PA && chmod +x xt && ./xt && rm xt
       # - Ruby
 
 
   # Nodejs
-  wget -O xt  http://git.io/R7LgJg && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/R7LgJg && chmod +x xt && ./xt && rm xt
       # - **Nodejs Packages**
       # - **NVM**
       # Watch files
@@ -80,10 +80,10 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 
   # rMate
-  wget -O xt  http://git.io/gE58Qg && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/gE58Qg && chmod +x xt && ./xt && rm xt
 
   # zsh
-  wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
 ```
 
 -------------------------------------------------------------------------------
