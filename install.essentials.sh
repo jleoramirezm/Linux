@@ -28,10 +28,6 @@ export LC_ALL=en_US.UTF-8
 # - **update**
 sudo apt update
 
-# - **Progress bar**
-function_message_title '- **Progress bar**'
-echo 'Dpkg:Progress-Fancy "1";' | sudo tee /etc/apt/apt.conf.d/99progressbar
-
 
 # - **Extras**
 function_message_title '- **Extras**'
@@ -50,35 +46,16 @@ wait
 sudo apt-get install -y linux-headers-generic dkms
 wait
 
+
 # - **Essential tools for compiling from sources**
 function_message_title '- **Essential tools for compiling from sources**'
 sudo apt-get install -y checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check
 wait
 
 
-# - **Curl**
-function_message_title '- **Curl**'
-sudo apt-get install -y curl
-wait
-
-
-# - **Git**
-function_message_title '- **Git**'
-sudo add-apt-repository -y ppa:git-core/ppa
-sudo apt update
-sudo apt-get install -y git
-wait
-
-# - **DaemonFSk**
-# DaemonFS is a real time file watcher.
-function_message_title '- **DaemonFSk**'
-sudo apt-get install -y daemonfs
-wait
-
-
-# - **Samba**
-function_message_title '- **Samba**'
-sudo apt-get install -y samba system-config-samba cifs-utils winbind
+# - **Packing software**
+function_message_title '- **Packing software**'
+sudo apt-get install -y unace rar unrar p7zip-rar p7zip zip unzip sharutils uudeview mpack arj cabextract file-roller
 wait
 
 
@@ -89,9 +66,10 @@ sudo apt-get install -y zssh
 wait
 
 
-# - **Packing software**
-function_message_title '- **Packing software**'
-sudo apt-get install -y unace rar unrar p7zip-rar p7zip zip unzip sharutils uudeview mpack arj cabextract file-roller
+# - **ack**
+function_message_title '- **ack**'
+sudo apt-get install -y ack-grep
+sudo ln -s /usr/bin/ack-grep /usr/bin/ack
 wait
 
 
@@ -110,14 +88,41 @@ sudo make install
 wait
 
 
-# - **Htop**
-function_message_title '- **Htop**'
-sudo apt-get install -y htop
+# - **Git Extras**
+function_message_title '- **Git Extras**'
+# https://github.com/visionmedia/git-extras
+(cd /tmp && git clone --depth 1 https://github.com/visionmedia/git-extras.git && cd git-extras && sudo make install)
 wait
 
 
-# - **ack**
-function_message_title '- **ack**'
-sudo apt-get install -y ack-grep
-sudo ln -s /usr/bin/ack-grep /usr/bin/ack
+# - **Cryptkeeper**
+function_message_title '- **Cryptkeeper**'
+sudo apt-get install -y cryptkeeper
+wait
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# - **Samba**
+function_message_title '- **Samba**'
+sudo apt-get install -y samba system-config-samba cifs-utils winbind
 wait

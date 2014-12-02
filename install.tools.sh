@@ -27,10 +27,19 @@ sudo apt update
 wait
 
 
-# - **rmate**
-function_message_title '- **rmate**'
-curl https://raw.github.com/aurora/rmate/master/rmate > rmate
-sudo cp rmate "~/.local/bin/rmate"
-sudo mv rmate /usr/local/bin
-sudo chmod +x /usr/local/bin/rmate
-sudo iptables -A INPUT -p tcp --dport 52698 -j ACCEPT
+# - **Samba**
+function_message_title '- **Samba**'
+sudo apt-get install -y samba
+wait
+
+
+# - **Filezilla**
+function_message_title '- **Filezilla**'
+sudo apt-get install -y filezilla filezilla-common
+wait
+
+
+# - **Mysql-Workbench**
+function_message_title '- **Mysql-Workbench**'
+sudo apt-get install -y mysql-workbench
+wait

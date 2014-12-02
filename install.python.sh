@@ -27,10 +27,12 @@ sudo apt update
 wait
 
 
-# - **rmate**
-function_message_title '- **rmate**'
-curl https://raw.github.com/aurora/rmate/master/rmate > rmate
-sudo cp rmate "~/.local/bin/rmate"
-sudo mv rmate /usr/local/bin
-sudo chmod +x /usr/local/bin/rmate
-sudo iptables -A INPUT -p tcp --dport 52698 -j ACCEPT
+# - **Python**
+function_message_title '- **Python**'
+sudo apt-get install -y python-dev libxml2-dev libxslt1-dev antiword poppler-utils pstotext
+wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
+sudo python ez_setup.py
+sudo easy_install pip
+sudo pip install textract
+wait
+

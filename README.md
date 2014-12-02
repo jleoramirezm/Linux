@@ -6,17 +6,74 @@ This repo is actually for personal use, but feel free to use it if you find it u
 ## Fast Install
 
 ```sh
-  # Eessentials
+  # | Basics | #
+  wget -O xt  http:// && chmod +x xt && ./xt && rm xt
+      # - Progress bar
+      # - Git
+      # - Curl
+      # - Vim
+      # - Htop
+
+
+  # | Eessentials | #
   wget -O xt  http://git.io/-BDg8Q && chmod +x xt && ./xt && rm xt
+      # - Extras
+      # - Essential tools for compiling from sources
+      # - Packing software
+      # - zssh
+      # - ack
+      # - Cloc
+      # - Git Cloc
+      # - Git Extras
+      # - Cryptkeeper
 
-  # Programing
-  wget -O xt  http://git.io/JufTRg && chmod +x xt && ./xt && rm xt
 
-  # Extras
+  # | Customize | #
+      # - Install Pantheon Desktop Environment
+      # - Grub Customizer
+      # - Cairo-Dock
+
+
+  # | Tools | #
+      # - Samba
+      # - Filezilla
+      # - mysql-workbench
+
+
+  # | Virtual tools | #
+      # - VirtualBox
+      # - Puppet
+      # - Docker
+      # - Vagrant
+
+
+  # | Extras | #
   wget -O xt  http://git.io/OBOaLQ && chmod +x xt && ./xt && rm xt
+      # - Pyrenamer
+      # - DaemonFSk
+      # - Gufw
+      # - Viewnior
+      # - shutter
+
+
+  # Python
+  wget -O xt  http://git.io/JufTRg && chmod +x xt && ./xt && rm xt
+      # - Ruby
+
+
+  # Ruby
+  wget -O xt  http://git.io/JufTRg && chmod +x xt && ./xt && rm xt
+      # - Ruby
+
 
   # Nodejs
   wget -O xt  http://git.io/R7LgJg && chmod +x xt && ./xt && rm xt
+      # - **Nodejs Packages**
+      # - **NVM**
+      # Watch files
+      # Yeoman
+      # Web Generator
+
 
   # rMate
   wget -O xt  http://git.io/gE58Qg && chmod +x xt && ./xt && rm xt
@@ -53,7 +110,6 @@ NOTE: **This scrip installs the following packages**
 - **Essential tools for compiling from sources**
 - **Extras**
 - **Filezilla**
-- **Folder Color**
 - **Git Cloc**
 - **Git Extras**
 - **Git**

@@ -26,11 +26,8 @@ SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 sudo apt update
 wait
 
-
-# - **rmate**
-function_message_title '- **rmate**'
-curl https://raw.github.com/aurora/rmate/master/rmate > rmate
-sudo cp rmate "~/.local/bin/rmate"
-sudo mv rmate /usr/local/bin
-sudo chmod +x /usr/local/bin/rmate
-sudo iptables -A INPUT -p tcp --dport 52698 -j ACCEPT
+# - **Ruby**
+function_message_title '- **Ruby**'
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+source ~/.rvm/scripts/rvm
+wait
