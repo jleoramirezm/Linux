@@ -24,6 +24,7 @@ SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+export LC_ALL="en_US.UTF-8"
 
 # - **update**
 sudo apt update
