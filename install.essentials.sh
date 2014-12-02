@@ -99,30 +99,3 @@ wait
 function_message_title '- **Cryptkeeper**'
 sudo apt-get install -y cryptkeeper
 wait
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# - **Samba**
-function_message_title '- **Samba**'
-sudo apt-get install -y samba system-config-samba cifs-utils winbind
-wait

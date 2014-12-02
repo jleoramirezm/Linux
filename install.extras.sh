@@ -20,6 +20,10 @@ function_message_title () {
   echo -e "${RS}"
 }
 
+function_check_intall () {
+    type -P $1 &>/dev/null && echo -e  "- Installed - ${GREEN} Ok ${RS} - $1" || echo -e  "- Install - ${RED} No ${RS} - $1"
+}
+
 SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 # - **update**
@@ -64,3 +68,10 @@ function_message_title '- **shutter**'
 sudo apt-get install -y shutter
 sudo apt-get -f install -y
 wait
+
+
+function_check_intall pyrenamer
+function_check_intall daemonfs
+function_check_intall gufw
+function_check_intall viewnior
+function_check_intall shutter
