@@ -86,55 +86,21 @@ This repo is actually for personal use, but feel free to use it if you find it u
   wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
 ```
 
+-------------------------------------------------------------------------------
+
 **Note:** if you get ERROR: certificate add ```--no-check-certificate``` 
 
 ```sh
   wget --no-check-certificate -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
 ```
 
-## Install Essentials
+-------------------------------------------------------------------------------
 
-Download and save the script file, make this file executable and run it:
+# Use of some commands
 
-```sh
-  install.essentials.sh
-```
-
-```sh
-# One line installer
-SCRIPT="install.essentials.sh" && wget https://raw.githubusercontent.com/Mayccoll/Linux/master/$SCRIPT && chmod +x $SCRIPT && ./$SCRIPT && rm $SCRIPT
-```
-
-NOTE: **This scrip installs the following packages**
-
-- **Cairo-Dock**
 - **Cloc**
-- **Curl**
-- **DaemonFSk**
-- **Essential tools for compiling from sources**
-- **Extras**
-- **Filezilla**
-- **Git Cloc**
-- **Git Extras**
-- **Git**
-- **Grub Customizer**
-- **Gufw**
-- **Install Pantheon Desktop Environment**
-- **Packing software**
-- **Progress bar**
-- **Puppet**
-- **pyrenamer**
-- **Python**
-- **rmate**
-- **Ruby**
-- **Samba**
-- **shutter**
-- **update**
-- **Viewnior**
-- **zssh**
 
 ```sh
-# Use Cloc
   $ cloc .
   $ cloc --exclude-lang=DTD,Lua,make,Python .
   $ find . -name "*.php" | xargs cloc
@@ -143,110 +109,16 @@ NOTE: **This scrip installs the following packages**
 - **Git Cloc**
 
 ```sh
-# Use Git Cloc
     git cloc -r
     git cloc
     git cloc --month 2014-6
 ```
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Install ZSH
-
-Download and save the script file, make this file executable and run it:
-
-```sh
-  install.essezshntials.sh
-```
-
-```sh
-# One line installer
-SCRIPT="install.zsh.sh" && wget https://raw.githubusercontent.com/Mayccoll/Linux/master/$SCRIPT && chmod +x $SCRIPT && ./$SCRIPT && rm $SCRIPT
-```
-
-NOTE: **This scrip installs zsh and antigen**
+-------------------------------------------------------------------------------
 
 
-- **Fix Errors**
-
-```bash
-  $ rm ~/.antigen/repos/https-COLON--SLASH--SLASH-gi* -rf
-```
-
-- **Installing ZSH Centos**
-
-```bash
-  $ yum install zsh
-
-  $ h=`whoami` && usermod -s /bin/zsh $h
-```
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Nodejs
-
-Download and save the script file, make this file executable and run it:
-
-```sh
-  install.nodejs.sh
-```
-
-```sh
-# One line installer
-SCRIPT="install.nodejs.sh" && wget https://raw.githubusercontent.com/Mayccoll/Linux/master/$SCRIPT && chmod +x $SCRIPT && ./$SCRIPT && rm $SCRIPT
-```
-
-NOTE: **This scrip installs Nodejs and the following packages**
-
-- **bower**
-- **less**
-- **grunt**
-- **grunt-cli**
-- **wr**
-- **yo**
-- **generator-webapp**
-- **generator-generator**
-
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-## rMate
-
-Download and save the script file, make this file executable and run it:
-
-```sh
-  install.rmate.sh
-```
-
-```sh
-# One line installer
-SCRIPT="install.rmate.sh" && wget https://raw.githubusercontent.com/Mayccoll/Linux/master/$SCRIPT && chmod +x $SCRIPT && ./$SCRIPT && rm $SCRIPT
-```
-
-NOTE: **This scrip installs rmate**
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-## Extras
+# More useful programs that are not included in scripts 
 
 
 - **wkhtmltopdf**
@@ -319,7 +191,9 @@ NOTE: **This scrip installs rmate**
 - **XBMC**
 
 ```sh
-  $ sudo add-apt-repository ppa:team-xbmc/ppa; sudo apt update; sudo apt install -y xbmc
+  $ sudo add-apt-repository ppa:team-xbmc/ppa
+  $ sudo apt-get update
+  $ sudo apt-get install xbmc
 ```
 
 
@@ -343,22 +217,16 @@ NOTE: **This scrip installs rmate**
   sudo apt install -y postgresql postgresql-client postgresql-contrib
 ```
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+-------------------------------------------------------------------------------
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-
-## **More nice apps**
+# **More nice apps**
 
 - Alsamixer
 - Angry IP Scanner -  http://angryip.org/
 - Bless Hex Editor
 - gpick
 - haroopad
-- htop
 - imagemagic
 - luckybackup
 - meld
@@ -373,14 +241,10 @@ NOTE: **This scrip installs rmate**
 
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+-------------------------------------------------------------------------------
 
 
-## Themes and Icons
+# Themes and Icons
 
 - **Ambiance ¬ Radiante**
 
@@ -445,178 +309,9 @@ NOTE: **This scrip installs rmate**
 
 ```
 
+-------------------------------------------------------------------------------
 
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-##    Useful Commands
-
-- **Add Usuario**
-
-```sh
-  $ sudo adduser [newuser]
-```
-
-- **Delete User**
-
-```sh
-  $ sudo userdel [newuser]
-```
-
-- **Add User to Group**
-
-```sh
-  $ sudo adduser [user] [group]
-```
-
-- **Permisos**
-
-```sh
-  $ sudo chmod -R 755 folder/
-```
-
-- **Owner**
-
-```sh
-  $ sudo chown -R $USER:$USER vagrant/
-```
-
-- **View Folder size**
-
-```sh
-  $ du -hs .
-  $ du * | sort -n
-
-  $ du -h [FOLDER]
-  $ du -hc [FOLDER]
-  $ du -hs [FOLDER]
-  $ du -hs .
-  $ du -hs *
-    du -hs . --exclude="*.txt"
-
-        # Find 10 largest files/directories
-        $ du -am /var | sort -n -r | head -n 10
-        $ du -hsx * | sort -rh | head -10
-```
-
-### Find
-
--  **Get all extensions and their respective file count in a directory**
-
-```sh
-  $ find ./ -type f | grep -E ".*\.[a-zA-Z0-9]*$" | sed -e 's/.*\(\.[a-zA-Z0-9]*\)$/\1/' | sort | uniq -c | sort -n
-```
-
-- **Make the "tree" command pretty and useful by default**
-
-```sh
-    alias tree="tree -CAFa -I 'CVS|*.*.package|.svn|.git' --dirsfirst"
-```
-
-- **Find file on specific day**
-
-```sh
-  $ find ./ -type f -ls | grep 'jun'
-```
-
-- **Find executable files**
-
-```sh
-  $ find . -perm /a=x -type f
-```
-
-- **Find and count files with extention**
-
-```sh
-  $ find . -type f -name "*.php" | wc -l
-```
-
-- **Count all the lines of code in a directory recursively**
-
-```sh
-  $ find . -name '*.php' | xargs wc -l
-```
-
-- **Find modified files on especific day**
-
-```sh
-  $ find ./ -type f -ls | grep 'jun'
-
-    #with exclude directory
-    $ find ./ -type f ! -path "./.git/*" -ls | grep 'jun'
-```
-
-- **Find Dupicate files**
-
-```sh
-  $ find -not -empty -type f -printf "%s\n" | sort -rn | uniq -d | xargs -I{} -n1 find -type f -size {}c -print0 | xargs -0 md5sum | sort | uniq -w32 --all-repeated=separate
-
-    # Duplicate Files
-    $ sudo apt-get install -y fdupes
-
-  $ fdupes -r .
-```
-
-
-- **Show users - home**
-
-```sh
-  $ cat /etc/passwd | grep "/home" |cut -d: -f1
-```
-
-- **Show users all and uid**
-
-```sh
-  $ awk -F":" '{ print "User: " $1 "\t\tuid:" $3 }' /etc/passwd
-```
-
-- **Show users all**
-
-```sh
-  $ cat /etc/passwd | cut -d ":" -f1
-```
-
-- **wget**
-
-```sh
-  $ wget -r -l1 --no-parent -nH -nd -P/tmp -A".gif,.jpg,.png" http://example.com/images
-```
-
-- **Get External IP**
-
-```sh
-  $ curl http://ipecho.net/plain
-
-  $ lynx --dump http://ipecho.net/plain
-
-  $ curl http://whatismyip.org/
-```
-
-- **Get Internal IP**
-
-```sh
-  $ /sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}'
-```
-
-- **Todos los paquetes instaldados**
-
-```sh
-  $ dpkg --get-selections >> paquetes-instalados.txt
-
-  $ grep install /var/log/dpkg.log >> paquetes-instalados.txt
-```
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# Useful
 
 
 ## Open ports
@@ -631,14 +326,6 @@ NOTE: **This scrip installs rmate**
 
   $ /sbin/service iptables restart
 ```
-
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ## SSH

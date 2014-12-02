@@ -31,3 +31,8 @@ function_message_title '- **Ruby**'
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 source ~/.rvm/scripts/rvm
 wait
+
+# sudo apt-add-repository ppa:rael-gc/rvm
+# sudo apt-get update
+# sudo apt-get install rvm
+# rvm install ruby
