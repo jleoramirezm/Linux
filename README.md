@@ -95,6 +95,11 @@ This repo is actually for personal use, but feel free to use it if you find it u
   wget --no-check-certificate -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
 ```
 
+### Install all
+
+```sh
+  $ wget -O xt  http://git.io/azymoA && chmod +x xt && ./xt && rm xt
+```
 
 -------------------------------------------------------------------------------
 
