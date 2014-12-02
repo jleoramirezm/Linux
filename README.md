@@ -7,7 +7,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 ```sh
   # | Basics | #
-  wget -O xt  http:// && chmod +x xt && ./xt && rm xt
+  wget -O xt  http://git.io/Dncnzw && chmod +x xt && ./xt && rm xt
       # - Progress bar
       # - Git
       # - Curl
