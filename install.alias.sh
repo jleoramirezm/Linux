@@ -101,29 +101,13 @@ alias aa-mysql-restart='/etc/init.d/mysql restart'
 # | Alias Git
 # |:::::::::::::::::::::::::::::::::::::::::::::::::|
 
-gg-config-mquintero () {
-    git config user.name  "mquintero"
-    git config user.email "miguel.quintero@turrisystem.com"
-}
-
-gg-config-mquintero () {
-    git config user.name  "Mayccoll"
-    git config user.email "mayccoll@gmail.com"
-}
 
 gg-echo () {
     echo ""
-    echo "gg-ck = git checkout [BRANCH]"
-    echo "gg-s = git status"
-    echo "gg-b = git branch [NEW BRANCH]"
-    echo "gg-bv = git branch -v"
-    echo "gg-c = git commit -m [COMMENT]"
     echo "gg-l = git log --graph --pretty=oneline --abbrev-commit"
     echo "gg-ll = git log --pretty=oneline --abbrev=9 -5"
     echo "gg-log = git log --pretty=oneline --abbrev-commit"
     echo "gg-log-cant-user = git shortlog -s -n"
-    echo "gg-cl = git clone [URL] ."
-    echo "gg-a = git add ."
     echo "gg-unpush = git log origin/master..HEAD --oneline"
     echo "gg-unpull = git log HEAD..origin/master --oneline"
     echo "gg-lme = git log --merges --oneline -20"
@@ -131,17 +115,12 @@ gg-echo () {
     echo "gg-count-b-ups = git log HEAD..upstream/master --oneline | wc -l "
 }
 
-alias gg-ck="git checkout $1"
-alias gg-s="git status"
-alias gg-b="git branch $1"
-alias gg-bv="git branch -v"
-alias gg-c="git commit -m $1"
+
+
 alias gg-l="git log --graph --pretty=oneline --abbrev-commit --abbrev=9"
 alias gg-ll="git log --pretty=oneline --abbrev=9 -5"
 alias gg-log="git log --pretty=oneline --abbrev-commit --abbrev=9 $1"
 alias gg-log-cant-user="git shortlog -s -n"
-alias gg-cl="git clone $1 ."
-alias gg-a="git add ."
 alias gg-unpush="git log origin/master..HEAD --oneline"
 alias gg-unpull="git log HEAD..origin/master --oneline"
 alias gg-unpull-upstream="git log HEAD..upstream/master --oneline"
