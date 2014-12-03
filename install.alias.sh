@@ -307,3 +307,5 @@ aa-colors () {
 
 # |::::::::::::::::::<<<alias
 EOF
+
+source $HOME/.zshrc
