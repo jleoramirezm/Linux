@@ -29,17 +29,6 @@ sudo apt-get update
 sudo apt-get install -y zsh
 
 
-    # - **Check if command
-    # ==============================================
-git --version 2>&1 >/dev/null
-CHECK=$?
-
-if [ $CHECK -ne 0 ]; then
-    # code..
-fi
-
-
-
     # - **Setting ZSH as the default shell (instead of bash)**
     # ==============================================
 w=`which zsh` && h=`whoami` && sudo chsh -s $w $h
