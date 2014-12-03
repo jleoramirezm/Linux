@@ -29,7 +29,7 @@ wait
 
 # - **VirtualBox**
 function_message_title '- **VirtualBox**'
-sudo apt-get install -y virtualbox
+sudo apt-get install -y virtualbox-4.3
 wait
 
 
