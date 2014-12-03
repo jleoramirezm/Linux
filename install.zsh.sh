@@ -19,7 +19,7 @@ WHITE="\e[0;37m"
 SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 
-    # -
+    # - update
     # ==============================================
 sudo apt-get update
 
@@ -33,6 +33,14 @@ sudo apt-get install -y zsh
     # ==============================================
 w=`which zsh` && h=`whoami` && sudo chsh -s $w $h
 
+
+    # - Install git if not present
+    # ==============================================
+git --version 2>&1 >/dev/null
+CHECK=$?
+if [ $CHECK -ne 0 ]; then
+    sudo apt-get install -y git
+fi
 
 
     # - **Install Oh-My-ZSH**
