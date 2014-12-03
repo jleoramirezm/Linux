@@ -3,7 +3,7 @@ wget -O xt  http://git.io/Dncnzw && chmod +x xt && ./xt && rm xt
 wait
 
 # | Eessentials | #
-wget -O xt  http://git.io/-BDg8Q && chmod +x xt && ./xt && rm xt
+wget -O xy  http://git.io/-BDg8Q && chmod +x xy && ./xy && rm xy
 wait
 
 # | Customize | #
