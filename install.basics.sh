@@ -20,10 +20,6 @@ function_message_title () {
   echo -e "${RS}"
 }
 
-function_check_intall () {
-    type -P $1 &>/dev/null && echo -e  "- Installed - ${GREEN} Ok ${RS} - $1" || echo -e  "- Install - ${RED} No ${RS} - $1"
-}
-
 SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 export LC_CTYPE=en_US.UTF-8
@@ -62,8 +58,3 @@ wait
 function_message_title '- **Htop**'
 sudo apt-get install -y htop
 wait
-
-function_check_intall git
-function_check_intall curl
-function_check_intall vim
-function_check_intall htop
