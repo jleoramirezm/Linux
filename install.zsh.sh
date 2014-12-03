@@ -82,14 +82,14 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git)
+plugins=(git archlinux django sublime themes python pip node npm history-substring-search zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
-LC_CTYPE=en_US.UTF-8
-LC_ALL=en_US.UTF-8
+export LC_TYPE="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 
 # |::::::::::::::::::>>>oh-my-zsh
 EOF
