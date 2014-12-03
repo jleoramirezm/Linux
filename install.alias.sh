@@ -51,49 +51,49 @@ alias cc='clear'
 alias c='clear'
 alias ..='cd ..'
 
-alias o--ip='ip addr list | grep eth0$'
+alias aa-ip='ip addr list | grep eth0$'
 
-alias o--ram-free="echo ' echo 3 > /proc/sys/vm/drop_caches'"
+alias aa-ram-free="echo ' echo 3 > /proc/sys/vm/drop_caches'"
 
-alias o--untar_file="tar -xzvf $1"
+alias aa-untar_file="tar -xzvf $1"
 
-alias o--users="cat /etc/passwd | grep /home | cut -d: -f1"
+alias aa-users="cat /etc/passwd | grep /home | cut -d: -f1"
 
-alias o--ssh="cat ~/.ssh/config"
+alias aa-ssh="cat ~/.ssh/config"
 
 # untar on the same folder
-o--untar-here_file() {
+aa-untar-here_file() {
     tar --strip-components=1 -zxvf "$1"
 }
 
 #wget limit
-o--wget_limit_url() {
+aa-wget_limit_url() {
     wget --limit-rate="$1"k "$2"
 }
 
-o--mkdir_cd() {
+aa-mkdir_cd() {
     mkdir "$1" && cd "$1"
 }
 
-o--ssh-keygen_comm() {
+aa-ssh-keygen_comm() {
     ssh-keygen -t rsa -b 2048 -f ~/.ssh/"$1" -C "$1"
 }
 
 
 # alias Apache, MySql
-alias o--apache-restart='/etc/init.d/apache2 restart'
-alias o--apache-stop='/etc/init.d/apache2 stop'
-alias o--apache-start='/etc/init.d/apache2 start'
+alias aa-apache-restart='/etc/init.d/apache2 restart'
+alias aa-apache-stop='/etc/init.d/apache2 stop'
+alias aa-apache-start='/etc/init.d/apache2 start'
 
-alias o--apache-vhost='apache2ctl -S'
+alias aa-apache-vhost='apache2ctl -S'
 
-alias o--mysql-start='/etc/init.d/mysql start'
-alias o--mysql-stop='/etc/init.d/mysql stop'
-alias o--mysql-restart='/etc/init.d/mysql restart'
+alias aa-mysql-start='/etc/init.d/mysql start'
+alias aa-mysql-stop='/etc/init.d/mysql stop'
+alias aa-mysql-restart='/etc/init.d/mysql restart'
 
-#alias o--nginx-start ='/etc/init.d/nginx start'
-#alias o--nginx-stop ='/etc/init.d/nginx stop'
-#alias o--nginx-restart ='/etc/init.d/nginx restart'
+#alias aa-nginx-start ='/etc/init.d/nginx start'
+#alias aa-nginx-stop ='/etc/init.d/nginx stop'
+#alias aa-nginx-restart ='/etc/init.d/nginx restart'
 
 
 
@@ -101,53 +101,53 @@ alias o--mysql-restart='/etc/init.d/mysql restart'
 # | Alias Git
 # |:::::::::::::::::::::::::::::::::::::::::::::::::|
 
-g--config-mquintero () {
+gg-config-mquintero () {
     git config user.name  "mquintero"
     git config user.email "miguel.quintero@turrisystem.com"
 }
 
-g--config-mquintero () {
+gg-config-mquintero () {
     git config user.name  "Mayccoll"
     git config user.email "mayccoll@gmail.com"
 }
 
-g--echo () {
+gg-echo () {
     echo ""
-    echo "g--ck = git checkout [BRANCH]"
-    echo "g--s = git status"
-    echo "g--b = git branch [NEW BRANCH]"
-    echo "g--bv = git branch -v"
-    echo "g--c = git commit -m [COMMENT]"
-    echo "g--l = git log --graph --pretty=oneline --abbrev-commit"
-    echo "g--ll = git log --pretty=oneline --abbrev=9 -5"
-    echo "g--log = git log --pretty=oneline --abbrev-commit"
-    echo "g--log-cant-user = git shortlog -s -n"
-    echo "g--cl = git clone [URL] ."
-    echo "g--a = git add ."
-    echo "g--unpush = git log origin/master..HEAD --oneline"
-    echo "g--unpull = git log HEAD..origin/master --oneline"
-    echo "g--lme = git log --merges --oneline -20"
-    echo "g--lstat = git log --pretty=format:'%h - %ar - %an, : %s' -30"
-    echo "g--count-b-ups = git log HEAD..upstream/master --oneline | wc -l "
+    echo "gg-ck = git checkout [BRANCH]"
+    echo "gg-s = git status"
+    echo "gg-b = git branch [NEW BRANCH]"
+    echo "gg-bv = git branch -v"
+    echo "gg-c = git commit -m [COMMENT]"
+    echo "gg-l = git log --graph --pretty=oneline --abbrev-commit"
+    echo "gg-ll = git log --pretty=oneline --abbrev=9 -5"
+    echo "gg-log = git log --pretty=oneline --abbrev-commit"
+    echo "gg-log-cant-user = git shortlog -s -n"
+    echo "gg-cl = git clone [URL] ."
+    echo "gg-a = git add ."
+    echo "gg-unpush = git log origin/master..HEAD --oneline"
+    echo "gg-unpull = git log HEAD..origin/master --oneline"
+    echo "gg-lme = git log --merges --oneline -20"
+    echo "gg-lstat = git log --pretty=format:'%h - %ar - %an, : %s' -30"
+    echo "gg-count-b-ups = git log HEAD..upstream/master --oneline | wc -l "
 }
 
-alias g--ck="git checkout $1"
-alias g--s="git status"
-alias g--b="git branch $1"
-alias g--bv="git branch -v"
-alias g--c="git commit -m $1"
-alias g--l="git log --graph --pretty=oneline --abbrev-commit --abbrev=9"
-alias g--ll="git log --pretty=oneline --abbrev=9 -5"
-alias g--log="git log --pretty=oneline --abbrev-commit --abbrev=9 $1"
-alias g--log-cant-user="git shortlog -s -n"
-alias g--cl="git clone $1 ."
-alias g--a="git add ."
-alias g--unpush="git log origin/master..HEAD --oneline"
-alias g--unpull="git log HEAD..origin/master --oneline"
-alias g--unpull-upstream="git log HEAD..upstream/master --oneline"
-alias g--lme="git log --merges --oneline -20"
-alias g--lstat="git log --pretty=format:'%Cred%h%Creset - %Cgreen%ar %Creset- %an, : %s %C(yellow)%d' -30"
-alias g--count-b-ups="echo -e ' Behine upstream \e[0;31m' && git log HEAD..upstream/master --oneline | wc -l && echo -e '\e[0m Commits'"
+alias gg-ck="git checkout $1"
+alias gg-s="git status"
+alias gg-b="git branch $1"
+alias gg-bv="git branch -v"
+alias gg-c="git commit -m $1"
+alias gg-l="git log --graph --pretty=oneline --abbrev-commit --abbrev=9"
+alias gg-ll="git log --pretty=oneline --abbrev=9 -5"
+alias gg-log="git log --pretty=oneline --abbrev-commit --abbrev=9 $1"
+alias gg-log-cant-user="git shortlog -s -n"
+alias gg-cl="git clone $1 ."
+alias gg-a="git add ."
+alias gg-unpush="git log origin/master..HEAD --oneline"
+alias gg-unpull="git log HEAD..origin/master --oneline"
+alias gg-unpull-upstream="git log HEAD..upstream/master --oneline"
+alias gg-lme="git log --merges --oneline -20"
+alias gg-lstat="git log --pretty=format:'%Cred%h%Creset - %Cgreen%ar %Creset- %an, : %s %C(yellow)%d' -30"
+alias gg-count-b-ups="echo -e ' Behine upstream \e[0;31m' && git log HEAD..upstream/master --oneline | wc -l && echo -e '\e[0m Commits'"
 
  # git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
  # git log HEAD..upstream/master --oneline | wc -l
@@ -157,7 +157,7 @@ alias g--count-b-ups="echo -e ' Behine upstream \e[0;31m' && git log HEAD..upstr
 # | Print all colors in console
 # |:::::::::::::::::::::::::::::::::::::::::::::::::|
 
-o--colors () {
+aa-colors () {
 
     echo "# Reset color"
     echo -e "\e[0m ***** AaBbCs *** \[\\\e[0m\] *** \\\e[0m \\e[0m ---> rs"
