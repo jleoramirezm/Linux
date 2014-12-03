@@ -132,8 +132,8 @@ EOF
     # Delete text beetwen 2 words
     # ==============================================
 FILEZSH="${HOME}/.zshrc"
-WORD1='# |::::::::::::::::::stars>>>' # |<=== Config This
-WORD2='# |::::::::::::::::::stars<<<' # |<=== Config This
+WORD1='# |::::::::::::::::::>>>stars' # |<=== Config This
+WORD2='# |::::::::::::::::::<<<stars' # |<=== Config This
 
 sed -e "/${WORD1}/,/${WORD2}/d"  "${HOME}${FILEZSH}" > "${HOME}${FILEZSH}_tmp"
 cp "${HOME}${FILEZSH}_tmp" "${HOME}${FILEZSH}"
@@ -144,12 +144,12 @@ rm "${HOME}${FILEZSH}_tmp"
     # ==============================================
 cat >> $HOME/.zshrc << "EOF"
 
-# |::::::::::::::::::stars>>>
+# |::::::::::::::::::>>>stars
 echo '
 　 ･ ·̩　　 ｡　☆　　　ﾟ｡  ＊ 　 ｡*　　+　 　＊ 　･ ｡☆+　 　＊ 　･ ｡☆
 ＊ 　 ｡*　　+　 　＊ 　･ ｡☆  　　　ﾟ･　　｡ﾟ･　　☆ﾟ　+  ｡　☆　　　ﾟ｡･ ·̩　　
 　☆　　　*　　　* 　 。  　 ･ ·̩　　 ｡　☆　　　ﾟ｡　☆　　　*　　　* 　　☆ﾟ　+
 　　　ﾟ･　　｡ﾟ･　　☆ﾟ　+ 　☆　　　*　　　* 　 。＊ 　 ｡*　　+　 　＊ 　･ ｡☆
 '
-# |::::::::::::::::::stars<<<
+# |::::::::::::::::::<<<stars
 EOF
