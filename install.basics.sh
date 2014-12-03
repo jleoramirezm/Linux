@@ -30,6 +30,7 @@ export LC_ALL=en_US.UTF-8
 
 EOF
 
+source  ~/.bashrc
 
 # - **update**
 sudo apt update
