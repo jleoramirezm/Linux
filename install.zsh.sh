@@ -79,6 +79,8 @@ cat > $HOME/.zshrc << "EOF"
 # |::::::::::::::::::>>>oh-my-zsh
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+# define where custom plugins live:
+ZSH_CUSTOM=~/.oh-my-zsh/custom/
 
 ZSH_THEME="robbyrussell"
 
@@ -94,6 +96,12 @@ export LC_ALL="en_US.UTF-8"
 # |::::::::::::::::::>>>oh-my-zsh
 EOF
 
+
+    # - **Syntax highlighting**
+    # ==============================================
+
+cd ~/.oh-my-zsh/custom/plugins
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 
 
     # - **Install antigen**
@@ -152,27 +160,3 @@ EOF
 
 
 
-    # Delete text beetwen 2 words
-    # ==============================================
-FILEDEL="${HOME}/.zshrc"
-WORD1='# |::::::::::::::::::>>>stars' # |<=== Config This
-WORD2='# |::::::::::::::::::<<<stars' # |<=== Config This
-
-sed -e "/${WORD1}/,/${WORD2}/d"  "${FILEDEL}" > "${FILEDEL}_tmp"
-cp "${FILEDEL}_tmp" "${FILEDEL}"
-rm "${FILEDEL}_tmp"
-
-
-    # - **Install antigen - Add**
-    # ==============================================
-cat >> $HOME/.zshrc << "EOF"
-
-# |::::::::::::::::::>>>stars
-echo '
-　 ･ ·̩　　 ｡　☆　　　ﾟ｡  ＊ 　 ｡*　　+　 　＊ 　･ ｡☆+　 　＊ 　･ ｡☆
-＊ 　 ｡*　　+　 　＊ 　･ ｡☆  　　　ﾟ･　　｡ﾟ･　　☆ﾟ　+  ｡　☆　　　ﾟ｡･ ·̩　　
-　☆　　　*　　　* 　 。  　 ･ ·̩　　 ｡　☆　　　ﾟ｡　☆　　　*　　　* 　　☆ﾟ　+
-　　　ﾟ･　　｡ﾟ･　　☆ﾟ　+ 　☆　　　*　　　* 　 。＊ 　 ｡*　　+　 　＊ 　･ ｡☆
-'
-# |::::::::::::::::::<<<stars
-EOF
