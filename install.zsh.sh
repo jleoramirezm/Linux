@@ -41,13 +41,40 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 
 
 
-    # - **Install zsh - Add**
+    # Delete text beetwen 2 words
     # ==============================================
-cat $SCRIPT_PATH/files/oh-my-zsh > "${HOME}/.zshrc"
-source "${HOME}/.zshrc"
+FILEDEL="${HOME}/.zshrc"
+WORD1='# |::::::::::::::::::>>>oh-my-zsh' # |<=== Config This
+WORD2='# |::::::::::::::::::<<<oh-my-zsh' # |<=== Config This
+
+sed -e "/${WORD1}/,/${WORD2}/d"  "${FILEDEL}" > "${FILEDEL}_tmp"
+cp "${FILEDEL}_tmp" "${FILEDEL}"
+rm "${FILEDEL}_tmp"
+
+
+    # - **Install Oh-My-ZSH - Add**
+    # ==============================================
+cat >> $HOME/.zshrc << "EOF"
+
+# |::::::::::::::::::>>>oh-my-zsh
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+ZSH_THEME="robbyrussell"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+
+# |::::::::::::::::::>>>oh-my-zsh
+EOF
+
 
 
     # - **Install antigen**
+    # ==============================================
     # ==============================================
 cd ~ && git clone https://github.com/zsh-users/antigen.git .antigen
 
