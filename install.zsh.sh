@@ -18,14 +18,24 @@ WHITE="\e[0;37m"
 
 SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
+function_message_title () {
+  echo -e "${CYAN}"
+  echo -e "# | ::::::::::::::::::::::::::::::::::::::::::::: | #"
+  echo -e "# |      ${RS} $1 ${CYAN}"
+  echo -e "# | ::::::::::::::::::::::::::::::::::::::::::::: | #"
+  echo -e "${RS}"
+}
+
 
     # - update
     # ==============================================
+function_message_title 'update'
 sudo apt-get update
 
 
     # - **Install zsh
     # ==============================================
+function_message_title 'Installing ZSH'
 sudo apt-get install -y zsh
 
 
@@ -39,12 +49,14 @@ w=`which zsh` && h=`whoami` && sudo chsh -s $w $h
 git --version 2>&1 >/dev/null
 CHECK=$?
 if [ $CHECK -ne 0 ]; then
+    function_message_title 'Installing Git'
     sudo apt-get install -y git
 fi
 
 
     # - **Install Oh-My-ZSH**
     # ==============================================
+function_message_title 'Installing Oh-My-Zsh'
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | bash
 
 
@@ -76,6 +88,9 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
+LC_CTYPE=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+
 # |::::::::::::::::::>>>oh-my-zsh
 EOF
 
@@ -83,6 +98,7 @@ EOF
 
     # - **Install antigen**
     # ==============================================
+function_message_title 'Installing Antigen'
 cd ~ && git clone https://github.com/zsh-users/antigen.git .antigen
 
 
