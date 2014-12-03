@@ -83,6 +83,10 @@ This repo is actually for personal use, but feel free to use it if you find it u
   $ wget -O xt  http://git.io/gE58Qg && chmod +x xt && ./xt && rm xt
 
 
+  # Alias
+  $ wget -O xt  http://git.io/ZjXC5g && chmod +x xt && ./xt && rm xt
+
+
   # zsh
   $ wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
 ```
