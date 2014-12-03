@@ -22,8 +22,14 @@ function_message_title () {
 
 SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
+
+cat >> ~/.bashrc << "EOF"
+
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+EOF
+
 
 # - **update**
 sudo apt update
