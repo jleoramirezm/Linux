@@ -152,7 +152,7 @@ antigen-bundle arialdomartini/oh-my-git
 antigen-bundle zsh-users/zsh-history-substring-search
 antigen-bundle zsh-users/zsh-syntax-highlighting
 
-antigen theme Mayccoll/oh-my-git-themes liino
+antigen theme Mayccoll/oh-my-git-themes remol
 
 antigen-apply
 # |::::::::::::::::::<<<antigen
