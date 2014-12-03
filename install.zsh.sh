@@ -102,7 +102,7 @@ rm "${FILEDEL}_tmp"
 cat >> $HOME/.zshrc << "EOF"
 
 # |::::::::::::::::::>>>antigen
-source "~/.antigen/antigen.zsh"
+source $HOME/.antigen/antigen.zsh
 
 # antigen bundle command-not-found
 # antigen bundle fabric
@@ -138,13 +138,13 @@ EOF
 
     # Delete text beetwen 2 words
     # ==============================================
-FILEZSH="${HOME}/.zshrc"
+FILEDEL="${HOME}/.zshrc"
 WORD1='# |::::::::::::::::::>>>stars' # |<=== Config This
 WORD2='# |::::::::::::::::::<<<stars' # |<=== Config This
 
-sed -e "/${WORD1}/,/${WORD2}/d"  "${HOME}${FILEZSH}" > "${HOME}${FILEZSH}_tmp"
-cp "${HOME}${FILEZSH}_tmp" "${HOME}${FILEZSH}"
-rm "${HOME}${FILEZSH}_tmp"
+sed -e "/${WORD1}/,/${WORD2}/d"  "${FILEDEL}" > "${FILEDEL}_tmp"
+cp "${FILEDEL}_tmp" "${FILEDEL}"
+rm "${FILEDEL}_tmp"
 
 
     # - **Install antigen - Add**
