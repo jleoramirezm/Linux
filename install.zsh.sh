@@ -62,7 +62,7 @@ rm "${FILEDEL}_tmp"
 
     # - **Install Oh-My-ZSH - Add**
     # ==============================================
-cat >> $HOME/.zshrc << "EOF"
+cat > $HOME/.zshrc << "EOF"
 
 # |::::::::::::::::::>>>oh-my-zsh
 # Path to your oh-my-zsh installation.
@@ -83,7 +83,6 @@ EOF
 
     # - **Install antigen**
     # ==============================================
-    # ==============================================
 cd ~ && git clone https://github.com/zsh-users/antigen.git .antigen
 
 
@@ -103,7 +102,7 @@ rm "${FILEDEL}_tmp"
 cat >> $HOME/.zshrc << "EOF"
 
 # |::::::::::::::::::>>>antigen
-source "/home/uu/.antigen/antigen.zsh"
+source "~/.antigen/antigen.zsh"
 
 # antigen bundle command-not-found
 # antigen bundle fabric
