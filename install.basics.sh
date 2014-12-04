@@ -65,3 +65,9 @@ wait
 function_message_title '- **Htop**'
 sudo apt-get install -y htop
 wait
+
+
+# - **Tree**
+function_message_title '- **Tree**'
+sudo apt-get install -y tree
+wait
