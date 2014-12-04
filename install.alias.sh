@@ -101,6 +101,20 @@ alias aa-mysql-restart='/etc/init.d/mysql restart'
 # | Alias Git
 # |:::::::::::::::::::::::::::::::::::::::::::::::::|
 
+git() {
+   local tmp=$(mktemp)
+   local repo_name
+
+   if [ "$1" = clone ] ; then
+     /usr/bin/git "$@" | tee $tmp
+     repo_name=$(awk -F\' '/Cloning into/ {print $2}' $tmp)
+     rm $tmp
+     printf "changing to directory %s\n" "$repo_name"
+     cd "$repo_name"
+   else
+     /usr/bin/git "$@"
+   fi
+}
 
 gg-echo () {
     echo ""
