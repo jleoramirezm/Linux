@@ -13,6 +13,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # - Curl
       # - Vim
       # - Htop
+      # - Tree
 
 
   # | Eessentials | #
