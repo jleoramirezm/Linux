@@ -250,6 +250,17 @@ This repo is actually for personal use, but feel free to use it if you find it u
   $ sudo apt install -y wine
 ```
 
+- **Salt**
+
+```sh
+  $ sudo apt-get install -y python-software-properties
+  $ sudo add-apt-repository -y ppa:saltstack/salt
+  $ sudo apt-get update
+  $ sudo apt-get install -y salt-master
+  $ sudo apt-get install -y salt-minion
+  $ sudo apt-get install -y salt-syndic
+```
+
 -------------------------------------------------------------------------------
 
 ## **More nice apps**
