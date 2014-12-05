@@ -40,9 +40,9 @@ wait
 
 
 # - **Docker**
-function_message_title '- **Docker**'
-sudo apt-get install -y docker.io
-wait
+#function_message_title '- **Docker**'
+#sudo apt-get install -y docker.io
+#wait
 
 
 # - **Vagrant**
