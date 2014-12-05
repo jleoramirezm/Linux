@@ -48,7 +48,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
   $ wget -O xt  http://git.io/KnwTFw && chmod +x xt && ./xt && rm xt
       # - VirtualBox
       # - Puppet
-      # - Docker
+      # - Docker (disable)
       # - Vagrant
 
 
