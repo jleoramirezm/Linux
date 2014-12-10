@@ -61,17 +61,45 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # - shutter
 
 
-  # Python
+  # | LAMP | #
+  $ wget -O xt  http://git.io/83F6CQ && chmod +x xt && ./xt && rm xt
+      # - apache2
+      # - libapache2-mod-php5
+      # - php-apc
+      # - php-pear
+      # - php5
+      # - php5-cli
+      # - php5-common
+      # - php5-curl
+      # - php5-dev
+      # - php5-fpm
+      # - php5-gd
+      # - php5-geoip
+      # - php5-imagick
+      # - php5-imap
+      # - php5-intl
+      # - php5-mcrypt
+      # - php5-memcache
+      # - php5-memcached
+      # - php5-mysql
+      # - php5-sqlite
+      # - php5-tidy
+      # - php5-xdebug
+      # - mysql-server
+      # - php5-mysql
+
+
+  # | Python | #
   $ wget -O xt  http://git.io/S63sLQ && chmod +x xt && ./xt && rm xt
       # - Python
 
 
-  # Ruby
+  # | Ruby | #
   $ wget -O xt  http://git.io/ZFV0PA && chmod +x xt && ./xt && rm xt
       # - Ruby
 
 
-  # Nodejs
+  # | Nodejs | #
   $ wget -O xt  http://git.io/R7LgJg && chmod +x xt && ./xt && rm xt
       # - **Nodejs Packages**
       # - **NVM**
@@ -80,25 +108,25 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # Web Generator
 
 
-  # zsh
+  # | zsh | #
   $ wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
 
 
-  # Alias
+  # | Alias | #
   $ wget -O xt  http://git.io/ZjXC5g && chmod +x xt && ./xt && rm xt
 
 
-  # Salt
+  # | Salt | #
   $ wget -O xt  http://git.io/QleHew && chmod +x xt && ./xt && rm xt
 
 
-  # rMate
+  # | rMate | #
   $ wget -O xt  http://git.io/gE58Qg && chmod +x xt && ./xt && rm xt
 ```
 
 -------------------------------------------------------------------------------
 
-**Note:** if you get ERROR: certificate add ```--no-check-certificate``` 
+**Note:** if you get ERROR: certificate add ```--no-check-certificate```
 
 ```sh
   wget --no-check-certificate -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
@@ -113,7 +141,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
 -------------------------------------------------------------------------------
 
 
-## More useful programs that are not included in scripts 
+## More useful programs that are not included in scripts
 
 
 - **wkhtmltopdf**
