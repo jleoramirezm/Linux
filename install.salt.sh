@@ -34,3 +34,16 @@ sudo apt-get install -y salt-master
 sudo apt-get install -y salt-minion
 
 sudo apt-get install -y salt-syndic
+
+
+# || Localhost
+
+# 1. $ vim /etc/salt/minion
+# 2. uncomment:
+#        #master: salt
+#    change to:
+#         master: localhost
+# 3. $ service salt-minion restart
+# 4. $ salt-key -L
+# 5. $ salt-key -a 'YOURHOSTNAME'
+# 6. $ salt '*' test.ping

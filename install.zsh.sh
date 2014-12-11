@@ -74,17 +74,19 @@ rm "${FILEDEL}_tmp"
 
     # - **Install Oh-My-ZSH - Add**
     # ==============================================
-cat > $HOME/.zshrc << "EOF"
+cat >> $HOME/.zshrc << "EOF"
 
 # |::::::::::::::::::>>>oh-my-zsh
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 # define where custom plugins live:
 ZSH_CUSTOM=~/.oh-my-zsh/custom/
+# Auto Update Enable
+DISABLE_UPDATE_PROMPT=true
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git archlinux django sublime themes python pip node npm history-substring-search zsh-syntax-highlighting)
+plugins=(git archlinux django sublime themes python pip node npm history-substring-search zsh-syntax-highlighting vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -126,32 +128,45 @@ rm "${FILEDEL}_tmp"
 cat >> $HOME/.zshrc << "EOF"
 
 # |::::::::::::::::::>>>antigen
+
+#
+# | Load Antigen
+#
 source $HOME/.antigen/antigen.zsh
 
-# antigen bundle command-not-found
-# antigen bundle fabric
-# antigen bundle heroku
-# antigen bundle kennethreitz/autoenv
-# antigen bundle lein
-# antigen bundle pip
-# antigen bundle rake
-# antigen bundle rvm
-# antigen bundle sprunge
-# antigen bundle vundle
+#
+# | Load various lib files
+#
+antigen bundle robbyrussell/oh-my-zsh lib/
 
+antigen bundle command-not-found
+antigen bundle fabric
+antigen bundle heroku
+antigen bundle kennethreitz/autoenv
+antigen bundle lein
+antigen bundle pip
+antigen bundle rake
+antigen bundle rvm
+antigen bundle sprunge
+antigen bundle vundle
 antigen bundle bundler
 antigen bundle node
-antigen bundle python
 antigen bundle npm
+antigen bundle python
 antigen bundle history
 antigen bundle rsync
 antigen-bundle vagrant
 antigen bundle git
-antigen bundle zsh-users/zsh-completions src
-antigen-bundle arialdomartini/oh-my-git
-antigen-bundle zsh-users/zsh-history-substring-search
-antigen-bundle zsh-users/zsh-syntax-highlighting
 
+antigen-bundle arialdomartini/oh-my-git
+
+antigen-bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-completions src
+antigen-bundle zsh-users/zsh-history-substring-search
+
+#
+# 1 Antigen Theme
+#
 antigen theme Mayccoll/oh-my-git-themes remol
 
 antigen-apply

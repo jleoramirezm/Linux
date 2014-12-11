@@ -36,20 +36,23 @@ cp "${FILEDEL}_tmp" "${FILEDEL}"
 rm "${FILEDEL}_tmp"
 
 
-    # - **Install antigen - Add**
+    # - **Install Alias**
     # ==============================================
 cat >> $HOME/.zshrc << "EOF"
 
 # |::::::::::::::::::>>>alias
 alias sudo='sudo '
 
-alias ll='ls -Xal --color=auto'
+alias ll='ls -Xalh --color=auto'
 alias la='ls -A --color=auto'
 alias l='ls -CF --color=auto'
 alias ll='ls -gXa --color=auto'
 alias cc='clear'
 alias c='clear'
 alias ..='cd ..'
+
+alias vim="sudo vim" # Run vim as super user
+alias ping='ping -c 5'      # Pings with 5 packets, not unlimited
 
 alias aa-ip='ip addr list | grep eth0$'
 
@@ -60,6 +63,35 @@ alias aa-untar_file="tar -xzvf $1"
 alias aa-users="cat /etc/passwd | grep /home | cut -d: -f1"
 
 alias aa-ssh="cat ~/.ssh/config"
+
+# curl for useragents
+alias iecurl="curl -H \"User-Agent: Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)\""
+alias ffcurl="curl -H \"User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)\""
+
+killit() {
+    # Kills any process that matches a regexp passed to it
+    ps aux | grep -v "grep" | grep "$@" | awk '{print $2}' | xargs sudo kill
+}
+
+extract () {
+    if [ -f $1 ] ; then
+        case $1 in
+            *.tar.bz2)        tar xjf $1        ;;
+            *.tar.gz)         tar xzf $1        ;;
+            *.bz2)            bunzip2 $1        ;;
+            *.rar)            unrar x $1        ;;
+            *.gz)             gunzip $1         ;;
+            *.tar)            tar xf $1         ;;
+            *.tbz2)           tar xjf $1        ;;
+            *.tgz)            tar xzf $1        ;;
+            *.zip)            unzip $1          ;;
+            *.Z)              uncompress $1     ;;
+            *)                echo "'$1' cannot be extracted via extract()" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
+}
 
 # untar on the same folder
 aa-untar-here_file() {
