@@ -70,7 +70,7 @@ alias ffcurl="curl -H \"User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-
 
 killit() {
     # Kills any process that matches a regexp passed to it
-    ps aux | grep -v "grep" | grep "$@" | awk '{print $2}' | xargs sudo kill
+    ps aux | grep -v "grep" | grep "$@" | awk '{print $2}' | xargs sudo kill -9
 }
 
 extract () {
