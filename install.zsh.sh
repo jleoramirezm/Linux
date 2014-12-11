@@ -174,4 +174,13 @@ antigen-apply
 EOF
 
 
+# ------------------------------------------------------
+# || no root
+# 
 
+#    cat <<-EOF >> $HOME/.bash_profile
+#    # |::::::::::::::::::>>>proftv
+#    export SHELL=/bin/zsh
+#    exec /bin/zsh -l
+#    # |::::::::::::::::::<<<proftv
+#    EOF
