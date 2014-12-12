@@ -27,9 +27,9 @@ function_message_title () {
 }
 
 function_message_red () {
-  echo -e "${CYAN}"
+  echo -e "${RED}"
   echo -e "# | ::::::::::::::::::::::::::::::::::::::::::::: | #"
-  echo -e "# |      ${RS} $1 ${CYAN}"
+  echo -e "# |      ${RS} $1 ${RED}"
   echo -e "# | ::::::::::::::::::::::::::::::::::::::::::::: | #"
   echo -e "${RS}"
 }
@@ -47,7 +47,7 @@ EOF
 
     # - Install git if not present
     # ==============================================
-git --version 2>&1 >/dev/null
+git --version
 CHECK=$?
 if [ $CHECK -ne 0 ]; then
     function_message_red 'Git is not installed'
@@ -58,14 +58,11 @@ fi
     # - **Install Oh-My-ZSH**
     # ==============================================
 
-curl --version 2>&1 >/dev/null
-CHECK=$?
-if [ $CHECK -ne 0 ]; then
-    function_message_title 'Installing Oh-My-Zsh'
-    curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | bash
-else
-    function_message_red 'Curl is not installed'
-fi
+
+function_message_title 'Installing Oh-My-Zsh'
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.zshrc ~/.zshrc.orig
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
 
 
