@@ -112,7 +112,7 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
     # - **Install antigen**
     # ==============================================
 function_message_title 'Installing Antigen'
-cd ~ && git clone https://github.com/zsh-users/antigen.git .antigen
+cd ~ && git clone git://github.com/zsh-users/antigen.git .antigen
 
 
     # Delete text beetwen 2 words
