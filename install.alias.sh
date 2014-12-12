@@ -43,6 +43,7 @@ cat >> $HOME/.zshrc << "EOF"
 # |::::::::::::::::::>>>alias
 alias sudo='sudo '
 
+unalias ll
 alias ll='ls -Xalh --color=auto'
 alias la='ls -A --color=auto'
 alias l='ls -CF --color=auto'
@@ -51,7 +52,7 @@ alias cc='clear'
 alias c='clear'
 alias ..='cd ..'
 
-alias vim="sudo vim" # Run vim as super user
+alias vims="sudo vim" # Run vim as super user
 alias ping='ping -c 5'      # Pings with 5 packets, not unlimited
 
 alias aa-ip='ip addr list | grep eth0$'
