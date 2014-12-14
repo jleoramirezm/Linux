@@ -633,9 +633,9 @@ This repo is actually for personal use, but feel free to use it if you find it u
 ```sh
   $ ll /dev/disk/by-uuid/ && ll /dev/disk/by-label/
 
-  $ sudo sublime /etc/fstab
+  $ sudo nano /etc/fstab
 
-    +++ UUID=e2a5bf75-e511-4330-9f1e-efc114b9a47e /media/oo/Tera  ext4    errors=remount-ro 0       1
++++ UUID=e2a5bf75-e511-4330-9f1e-efc114b9a47e /media/oo/Tera  ext4    errors=remount-ro 0       1
 
 ```
 
@@ -717,3 +717,10 @@ This repo is actually for personal use, but feel free to use it if you find it u
 ```sh
     alias = git ls-files -v | grep '^[[:lower:]]'
 ```
+
+
+## APT
+
+```bash
+  $ sudo vim /etc/lsb-release
+  $ sudo vim /etc/apt/sources.list
