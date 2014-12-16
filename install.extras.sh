@@ -65,6 +65,7 @@ wait
 
 # - **shutter**
 function_message_title '- **shutter**'
+sudo apt-get install -y libgoo-canvas-perl
 sudo apt-get install -y shutter
 sudo apt-get -f install -y
 wait
