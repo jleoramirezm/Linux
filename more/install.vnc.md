@@ -188,3 +188,9 @@ VNCSERVERARGS[3]="-geometry 800x600 -depth 8"
 ```sh
     $ vnc4server
 ```
+
+# ######################################################
+#  Notes
+# 
+# Clean old sessions
+# $ rm /tmp/.X*lock && rm /tmp/.X11-unix/X*
