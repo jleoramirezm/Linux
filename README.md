@@ -318,6 +318,16 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 ## Themes and Icons
 
+Libra 
+
+- **Libra**
+
+```bash
+  $ sudo add-apt-repository ppa:noobslab/themes
+  $ sudo apt-get update
+  $ sudo apt-get install libra-theme
+```
+
 - **Ambiance ¬ Radiante**
 
 ```bash
