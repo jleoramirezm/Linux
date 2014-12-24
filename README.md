@@ -328,6 +328,14 @@ Libra
   $ sudo apt-get install libra-theme
 ```
 
+- **Flattastic**
+
+```bash
+  $ sudo add-apt-repository ppa:noobslab/themes
+  $ sudo apt-get update
+  $ sudo apt-get install flattastic-suite
+```
+
 - **Ambiance ¬ Radiante**
 
 ```bash
