@@ -1,7 +1,8 @@
 #!/bin/bash
+SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-    # - colors
-    # ==============================================
+# - colors
+# ==============================================
 
 # Reset color
 RS="\e[0m"
@@ -16,7 +17,8 @@ CYAN="\e[0;36m"
 WHITE="\e[0;37m"
 
 
-SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+# - Function for Titles
+# ==============================================
 
 function_message_title () {
   echo -e "${CYAN}"
@@ -27,25 +29,25 @@ function_message_title () {
 }
 
 
-    # - update
-    # ==============================================
+# - update
+# ==============================================
 function_message_title 'update'
 sudo apt-get update
 
 
-    # - **Install zsh
-    # ==============================================
+# - **Install zsh
+# ==============================================
 function_message_title 'Installing ZSH'
 sudo apt-get install -y zsh
 
 
-    # - **Setting ZSH as the default shell (instead of bash)**
-    # ==============================================
+# - **Setting ZSH as the default shell (instead of bash)**
+# ==============================================
 w=`which zsh` && h=`whoami` && sudo chsh -s $w $h
 
 
-    # - Install git if not present
-    # ==============================================
+# - Install git if not present
+# ==============================================
 git --version 2>&1 >/dev/null
 CHECK=$?
 if [ $CHECK -ne 0 ]; then
@@ -54,15 +56,15 @@ if [ $CHECK -ne 0 ]; then
 fi
 
 
-    # - **Install Oh-My-ZSH**
-    # ==============================================
+# - **Install Oh-My-ZSH**
+# ==============================================
 function_message_title 'Installing Oh-My-Zsh'
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | bash
 
 
 
-    # Delete text beetwen 2 words
-    # ==============================================
+# Delete text beetwen 2 words
+# ==============================================
 FILEDEL="${HOME}/.zshrc"
 WORD1='# |::::::::::::::::::>>>oh-my-zsh' # |<=== Config This
 WORD2='# |::::::::::::::::::<<<oh-my-zsh' # |<=== Config This
@@ -72,8 +74,8 @@ cp "${FILEDEL}_tmp" "${FILEDEL}"
 rm "${FILEDEL}_tmp"
 
 
-    # - **Install Oh-My-ZSH - Add**
-    # ==============================================
+# - **Install Oh-My-ZSH - Add**
+# ==============================================
 cat >> $HOME/.zshrc << "EOF"
 
 # |::::::::::::::::::>>>oh-my-zsh
@@ -99,21 +101,21 @@ export LC_ALL="en_US.UTF-8"
 EOF
 
 
-    # - **Syntax highlighting**
-    # ==============================================
+# - **Syntax highlighting**
+# ==============================================
 
 cd ~/.oh-my-zsh/custom/plugins
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 
 
-    # - **Install antigen**
-    # ==============================================
+# - **Install antigen**
+# ==============================================
 function_message_title 'Installing Antigen'
 cd ~ && git clone https://github.com/zsh-users/antigen.git .antigen
 
 
-    # Delete text beetwen 2 words
-    # ==============================================
+# Delete text beetwen 2 words
+# ==============================================
 FILEDEL="${HOME}/.zshrc"
 WORD1='# |::::::::::::::::::>>>antigen' # |<=== Config This
 WORD2='# |::::::::::::::::::<<<antigen' # |<=== Config This
@@ -123,8 +125,8 @@ cp "${FILEDEL}_tmp" "${FILEDEL}"
 rm "${FILEDEL}_tmp"
 
 
-    # - **Install antigen - Add**
-    # ==============================================
+# - **Install antigen - Add**
+# ==============================================
 cat >> $HOME/.zshrc << "EOF"
 
 # |::::::::::::::::::>>>antigen
