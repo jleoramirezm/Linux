@@ -27,6 +27,14 @@ SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 sudo apt-get update
 
 
+# - **Extras**
+function_message_title '- **Extras**'
+sudo apt-get install -y software-properties-common python-software-properties
+wait
+
+sudo apt-get -f install -y
+wait
+
 # - **Progress bar**
 function_message_title '- **Progress bar**'
 echo 'Dpkg::Progress-Fancy "1";' | sudo tee /etc/apt/apt.conf.d/99progressbar
