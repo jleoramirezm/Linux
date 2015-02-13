@@ -26,11 +26,6 @@ SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 sudo apt update
 
 
-# - **Extras**
-function_message_title '- **Extras**'
-sudo apt-get install -y software-properties-common python-software-properties
-wait
-
 sudo apt-get -f install -y
 wait
 
