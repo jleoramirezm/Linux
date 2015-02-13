@@ -24,7 +24,7 @@ SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 
 # - **update**
-sudo apt update
+sudo apt-get update
 
 
 # - **Progress bar**
@@ -35,7 +35,7 @@ echo 'Dpkg::Progress-Fancy "1";' | sudo tee /etc/apt/apt.conf.d/99progressbar
 # - **Git**
 function_message_title '- **Git**'
 sudo add-apt-repository -y ppa:git-core/ppa
-sudo apt update
+sudo apt-get update
 sudo apt-get install -y git
 wait
 
