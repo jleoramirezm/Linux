@@ -58,13 +58,6 @@ sudo apt-get install -y zssh
 wait
 
 
-# - **ack**
-function_message_title '- **ack**'
-sudo apt-get install -y ack-grep
-sudo ln -s /usr/bin/ack-grep /usr/bin/ack
-wait
-
-
 # - **Cloc**
 # Count Lines of Code
 function_message_title '- **Cloc**'
@@ -77,6 +70,7 @@ function_message_title '- **Git Cloc**'
 git clone https://github.com/kaelzhang/git-cloc.git
 cd "${SCRIPT_PATH}/git-cloc/"
 sudo make install
+rm -rf "${SCRIPT_PATH}/git-cloc/"
 wait
 
 
@@ -87,7 +81,7 @@ function_message_title '- **Git Extras**'
 wait
 
 
-# - **Cryptkeeper**
-function_message_title '- **Cryptkeeper**'
-sudo apt-get install -y cryptkeeper
+# - **Nemo Rabbitvcs**
+function_message_title '- **Install Nemo Rabbitvcs**'
+sudo apt-get install -y nemo-rabbitvcs
 wait
