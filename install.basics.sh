@@ -70,3 +70,10 @@ wait
 function_message_title '- **Tree**'
 sudo apt-get install -y tree
 wait
+
+
+# - **ack**
+function_message_title '- **ack**'
+sudo apt-get install -y ack-grep
+sudo ln -s /usr/bin/ack-grep /usr/bin/ack
+wait
