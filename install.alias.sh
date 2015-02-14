@@ -55,24 +55,10 @@ alias ..='cd ..'
 alias vims="sudo vim" # Run vim as super user
 alias ping='ping -c 5'      # Pings with 5 packets, not unlimited
 
-alias aa-ip='ip addr list | grep eth0$'
-
-alias aa-ram-free="echo ' echo 3 > /proc/sys/vm/drop_caches'"
-
-alias aa-untar_file="tar -xzvf $1"
-
-alias aa-users="cat /etc/passwd | grep /home | cut -d: -f1"
-
-alias aa-ssh="cat ~/.ssh/config"
 
 # curl for useragents
 alias iecurl="curl -H \"User-Agent: Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)\""
 alias ffcurl="curl -H \"User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)\""
-
-killit() {
-    # Kills any process that matches a regexp passed to it
-    ps aux | grep -v "grep" | grep "$@" | awk '{print $2}' | xargs sudo kill -9
-}
 
 extract () {
     if [ -f $1 ] ; then
@@ -94,39 +80,49 @@ extract () {
     fi
 }
 
+alias oo-ip='ip addr list | grep eth0$'
+
+alias oo-ram-free="echo ' echo 3 > /proc/sys/vm/drop_caches'"
+
+alias oo-untar_file="tar -xzvf $1"
+
+alias oo-users="cat /etc/passwd | grep /home | cut -d: -f1"
+
+alias oo-ssh="cat ~/.ssh/config"
+
 # untar on the same folder
-aa-untar-here_file() {
+oo-untar-here_file() {
     tar --strip-components=1 -zxvf "$1"
 }
 
 #wget limit
-aa-wget_limit_url() {
+oo-wget_limit_url() {
     wget --limit-rate="$1"k "$2"
 }
 
-aa-mkdir_cd() {
+oo-mkdir_cd() {
     mkdir "$1" && cd "$1"
 }
 
-aa-ssh-keygen_comm() {
+oo-ssh-keygen_comm() {
     ssh-keygen -t rsa -b 2048 -f ~/.ssh/"$1" -C "$1"
 }
 
 
 # alias Apache, MySql
-alias aa-apache-restart='/etc/init.d/apache2 restart'
-alias aa-apache-stop='/etc/init.d/apache2 stop'
-alias aa-apache-start='/etc/init.d/apache2 start'
+alias oo-apache-restart='/etc/init.d/apache2 restart'
+alias oo-apache-stop='/etc/init.d/apache2 stop'
+alias oo-apache-start='/etc/init.d/apache2 start'
 
-alias aa-apache-vhost='apache2ctl -S'
+alias oo-apache-vhost='apache2ctl -S'
 
-alias aa-mysql-start='/etc/init.d/mysql start'
-alias aa-mysql-stop='/etc/init.d/mysql stop'
-alias aa-mysql-restart='/etc/init.d/mysql restart'
+alias oo-mysql-start='/etc/init.d/mysql start'
+alias oo-mysql-stop='/etc/init.d/mysql stop'
+alias oo-mysql-restart='/etc/init.d/mysql restart'
 
-#alias aa-nginx-start ='/etc/init.d/nginx start'
-#alias aa-nginx-stop ='/etc/init.d/nginx stop'
-#alias aa-nginx-restart ='/etc/init.d/nginx restart'
+#alias oo-nginx-start ='/etc/init.d/nginx start'
+#alias oo-nginx-stop ='/etc/init.d/nginx stop'
+#alias oo-nginx-restart ='/etc/init.d/nginx restart'
 
 
 
@@ -149,31 +145,31 @@ git() {
    fi
 }
 
-gg-echo () {
+oo-echo () {
     echo ""
-    echo "gg-l = git log --graph --pretty=oneline --abbrev-commit"
-    echo "gg-ll = git log --pretty=oneline --abbrev=9 -5"
-    echo "gg-log = git log --pretty=oneline --abbrev-commit"
-    echo "gg-log-cant-user = git shortlog -s -n"
-    echo "gg-unpush = git log origin/master..HEAD --oneline"
-    echo "gg-unpull = git log HEAD..origin/master --oneline"
-    echo "gg-lme = git log --merges --oneline -20"
-    echo "gg-lstat = git log --pretty=format:'%h - %ar - %an, : %s' -30"
-    echo "gg-count-b-ups = git log HEAD..upstream/master --oneline | wc -l "
+    echo "oo-l = git log --graph --pretty=oneline --abbrev-commit"
+    echo "oo-ll = git log --pretty=oneline --abbrev=9 -5"
+    echo "oo-log = git log --pretty=oneline --abbrev-commit"
+    echo "oo-log-cant-user = git shortlog -s -n"
+    echo "oo-unpush = git log origin/master..HEAD --oneline"
+    echo "oo-unpull = git log HEAD..origin/master --oneline"
+    echo "oo-lme = git log --merges --oneline -20"
+    echo "oo-lstat = git log --pretty=format:'%h - %ar - %an, : %s' -30"
+    echo "oo-count-b-ups = git log HEAD..upstream/master --oneline | wc -l "
 }
 
 
 
-alias gg-l="git log --graph --pretty=oneline --abbrev-commit --abbrev=9"
-alias gg-ll="git log --pretty=oneline --abbrev=9 -5"
-alias gg-log="git log --pretty=oneline --abbrev-commit --abbrev=9 $1"
-alias gg-log-cant-user="git shortlog -s -n"
-alias gg-unpush="git log origin/master..HEAD --oneline"
-alias gg-unpull="git log HEAD..origin/master --oneline"
-alias gg-unpull-upstream="git log HEAD..upstream/master --oneline"
-alias gg-lme="git log --merges --oneline -20"
-alias gg-lstat="git log --pretty=format:'%Cred%h%Creset - %Cgreen%ar %Creset- %an, : %s %C(yellow)%d' -30"
-alias gg-count-b-ups="echo -e ' Behine upstream \e[0;31m' && git log HEAD..upstream/master --oneline | wc -l && echo -e '\e[0m Commits'"
+alias oo-l="git log --graph --pretty=oneline --abbrev-commit --abbrev=9"
+alias oo-ll="git log --pretty=oneline --abbrev=9 -5"
+alias oo-log="git log --pretty=oneline --abbrev-commit --abbrev=9 $1"
+alias oo-log-cant-user="git shortlog -s -n"
+alias oo-unpush="git log origin/master..HEAD --oneline"
+alias oo-unpull="git log HEAD..origin/master --oneline"
+alias oo-unpull-upstream="git log HEAD..upstream/master --oneline"
+alias oo-lme="git log --merges --oneline -20"
+alias oo-lstat="git log --pretty=format:'%Cred%h%Creset - %Cgreen%ar %Creset- %an, : %s %C(yellow)%d' -30"
+alias oo-count-b-ups="echo -e ' Behine upstream \e[0;31m' && git log HEAD..upstream/master --oneline | wc -l && echo -e '\e[0m Commits'"
 
  # git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
  # git log HEAD..upstream/master --oneline | wc -l
@@ -183,7 +179,7 @@ alias gg-count-b-ups="echo -e ' Behine upstream \e[0;31m' && git log HEAD..upstr
 # | Print all colors in console
 # |:::::::::::::::::::::::::::::::::::::::::::::::::|
 
-aa-colors () {
+oo-colors () {
 
     echo "# Reset color"
     echo -e "\e[0m ***** AaBbCs *** \[\\\e[0m\] *** \\\e[0m \\e[0m ---> rs"
