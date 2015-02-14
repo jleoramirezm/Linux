@@ -49,3 +49,14 @@ wait
 function_message_title '- **Remmina**'
 sudo apt-get install -y remmina remmina-common remmina-plugin-vnc remmina-plugin-nx remmina-plugin-telepathy
 wait
+
+
+# - **Cryptkeeper**
+function_message_title '- **Cryptkeeper**'
+sudo apt-get install -y cryptkeeper
+wait
+
+
+# - **Meld**
+function_message_title '- **Install Meld**'
+sudo apt install -y meld
