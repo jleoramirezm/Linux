@@ -130,6 +130,13 @@ alias oo-mysql-restart='/etc/init.d/mysql restart'
 # | Alias Git
 # |:::::::::::::::::::::::::::::::::::::::::::::::::|
 
+git config --global alias.co checkout
+git config --global alias.ck checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.s  status
+
 git() {
    local tmp=$(mktemp)
    local repo_name
