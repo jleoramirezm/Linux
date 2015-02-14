@@ -8,30 +8,52 @@ This repo is actually for personal use, but feel free to use it if you find it u
 ```sh
   # | Basics | #
   $ wget -O xt  http://git.io/Dncnzw && chmod +x xt && ./xt && rm xt
+      # - Extras
       # - Progress bar
       # - Git
       # - Curl
       # - Vim
       # - Htop
       # - Tree
+      # - ack
+
+
+  # | zsh | #
+  $ wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
+      # - Install zsh
+      # - Install Oh-My-ZSH
+      # - Install antigen
 
 
   # | Eessentials | #
   $ wget -O xt  http://git.io/-BDg8Q && chmod +x xt && ./xt && rm xt
-      # - Extras
       # - Essential tools for compiling from sources
       # - Packing software
       # - zssh
-      # - ack
       # - Cloc
       # - Git Cloc
       # - Git Extras
-      # - Cryptkeeper
+      # - Nemo Rabbitvcs
+
+
+  # | Extras | #
+  $ wget -O xt  http://git.io/OBOaLQ && chmod +x xt && ./xt && rm xt
+      # - Pyrenamer
+      # - DaemonFSk
+      # - Gufw
+      # - Viewnior
+
+
+  # | Design | #
+  $ wget -O xt  http://git.io/Nov7 && chmod +x xt && ./xt && rm xt
+      # - gPick
+      # - Shutter
 
 
   # | Customize | #
   $ wget -O xt  http://git.io/h9dVjw && chmod +x xt && ./xt && rm xt
       # - Install Pantheon Desktop Environment
+      # - Themes Libra Flattastic
       # - Grub Customizer
       # - Cairo-Dock
 
@@ -42,6 +64,8 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # - Filezilla
       # - mysql-workbench
       # - Remmina
+      # - Cryptkeeper
+      # - Meld
 
 
   # | Virtual tools | #
@@ -50,15 +74,6 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # - Puppet
       # - Docker (disable)
       # - Vagrant
-
-
-  # | Extras | #
-  $ wget -O xt  http://git.io/OBOaLQ && chmod +x xt && ./xt && rm xt
-      # - Pyrenamer
-      # - DaemonFSk
-      # - Gufw
-      # - Viewnior
-      # - shutter
 
 
   # | LAMP | #
@@ -108,10 +123,6 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # Web Generator
 
 
-  # | zsh | #
-  $ wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
-
-
   # | zsh no root| #
   $ wget -O xt  http://git.io/D_Fw_w && chmod +x xt && ./xt && rm xt
 
@@ -144,6 +155,45 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 -------------------------------------------------------------------------------
 
+### Install more nice stuffs
+
+- Install Vagrant
+
+```sh
+    https://www.vagrantup.com/downloads.html
+```
+
+- Install VirtualBox
+
+```sh
+    https://www.virtualbox.org/wiki/Downloads
+```
+
+- Install Gimp 2.9
+
+```sh
+    $ sudo add-apt-repository ppa:otto-kesselgulasch/gimp-edge
+```
+
+- Install Gimp Theme photoshop
+
+```sh
+    http://doctormo.deviantart.com/art/Gimp-2-8-Photoshop-Tweaks-432736644
+```
+
+- Install last version of gThump
+
+```sh
+    $ sudo add-apt-repository -y ppa:webupd8team/gthumb
+```
+
+- Install Koala
+
+```sh
+    http://koala-app.com/
+```
+
+-------------------------------------------------------------------------------
 
 ## More useful programs that are not included in scripts
 
@@ -208,13 +258,6 @@ This repo is actually for personal use, but feel free to use it if you find it u
 ```
 
 
-- **Folder Colors**
-
-```sh
-  $ sudo add-apt-repository ppa:costales/folder-color -y && sudo apt update && sudo apt install folder-color -y && sudo apt install python-nemo && sudo cp /usr/share/nautilus-python/extensions/folder-color.py /usr/share/nemo-python/extensions/ && sudo sed -i 's/Nautilus/Nemo/g' /usr/share/nemo-python/extensions/folder-color.py && nemo -q
-```
-
-
 - **XBMC**
 
 ```sh
@@ -244,17 +287,6 @@ This repo is actually for personal use, but feel free to use it if you find it u
   sudo apt install -y postgresql postgresql-client postgresql-contrib
 ```
 
-- **Meld**
-
-```sh
-  $ sudo apt install -y meld
-```
-
-- **gpick**
-
-```sh
-  $ sudo apt install -y gpick
-```
 
 - **qshutdown**
 
