@@ -28,26 +28,43 @@ function_message_title () {
   echo -e "${RS}"
 }
 
+function_message_title_red () {
+  echo -e "${RED}"
+  echo -e "# | ::::::::::::::::::::::::::::::::::::::::::::: | #"
+  echo -e "# |      ${RS} $1 ${RED}"
+  echo -e "# | ::::::::::::::::::::::::::::::::::::::::::::: | #"
+  echo -e "${RS}"
+}
 
 # - update
 # ==============================================
+
 function_message_title 'update'
 sudo apt-get update
 
 
 # - **Install zsh
 # ==============================================
-function_message_title 'Installing ZSH'
-sudo apt-get install -y zsh
 
+function_message_title 'Installing ZSH'
+zsh --version 2>&1 >/dev/null
+CHECK=$?
+if [ $CHECK -ne 0 ]; then
+    sudo apt-get install -y zsh
+else
+    function_message_title_red 'zsh already install'
+    zsh --version
+fi
 
 # - **Setting ZSH as the default shell (instead of bash)**
 # ==============================================
+
 w=`which zsh` && h=`whoami` && sudo chsh -s $w $h
 
 
 # - Install git if not present
 # ==============================================
+
 git --version 2>&1 >/dev/null
 CHECK=$?
 if [ $CHECK -ne 0 ]; then
@@ -58,29 +75,44 @@ fi
 
 # - **Install Oh-My-ZSH**
 # ==============================================
+
 function_message_title 'Installing Oh-My-Zsh'
+curl --version 2>&1 >/dev/null
+CHECK=$?
+if [ $CHECK -eq 0 ]; then
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | bash
+else
+wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+fi
 
 
 
-# Delete text beetwen 2 words
+#!/bin/bash
+FILE_ZSH_CHECK="${HOME}/.zshrc"
+if [[ -s $FILE_ZSH_CHECK ]] ; then
+    echo "" > $FILE_ZSH_CHECK
+fi
+
+# Delete and Insert text beetwen 2 words
 # ==============================================
-FILEDEL="${HOME}/.zshrc"
-WORD1='# |::::::::::::::::::>>>oh-my-zsh' # |<=== Config This
-WORD2='# |::::::::::::::::::<<<oh-my-zsh' # |<=== Config This
-
-sed -e "/${WORD1}/,/${WORD2}/d"  "${FILEDEL}" > "${FILEDEL}_tmp"
-cp "${FILEDEL}_tmp" "${FILEDEL}"
-rm "${FILEDEL}_tmp"
 
 
-# - **Install Oh-My-ZSH - Add**
-# ==============================================
-cat >> $HOME/.zshrc << "EOF"
+FILE_ZSH="${HOME}/.zshrc"
 
-# |::::::::::::::::::>>>oh-my-zsh
+XXXXXBEGIN='# |::::::::::::: oh-my-zsh ::::::::::::::>>>' # |<=== Config This
+XXXXXXXEND='# |::::::::::::: oh-my-zsh ::::::::::::::<<<' # |<=== Config This
+
+sed -e "/${XXXXXBEGIN}/,/${XXXXXXXEND}/d"  "${FILE_ZSH}" > "${FILE_ZSH}_tmp"
+cp "${FILE_ZSH}_tmp" "${FILE_ZSH}"
+rm "${FILE_ZSH}_tmp"
+
+# ======<
+cat >> $FILE_ZSH << EOF
+
+$XXXXXBEGIN
+
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=\$HOME/.oh-my-zsh
 # define where custom plugins live:
 ZSH_CUSTOM=~/.oh-my-zsh/custom/
 # Auto Update Enable
@@ -90,15 +122,17 @@ ZSH_THEME="robbyrussell"
 
 plugins=(git archlinux django sublime themes python pip node npm history-substring-search zsh-syntax-highlighting vagrant)
 
-source $ZSH/oh-my-zsh.sh
+source \$ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
-export LC_TYPE="en_US.UTF-8"
-export LC_ALL="en_US.UTF-8"
+# export LC_TYPE="en_US.UTF-8"
+# export LC_ALL="en_US.UTF-8"
 
-# |::::::::::::::::::>>>oh-my-zsh
+$XXXXXXXEND
+
 EOF
+# ======<
 
 
 # - **Syntax highlighting**
@@ -114,32 +148,33 @@ function_message_title 'Installing Antigen'
 cd ~ && git clone https://github.com/zsh-users/antigen.git .antigen
 
 
-# Delete text beetwen 2 words
+# Delete and Insert text beetwen 2 words
 # ==============================================
-FILEDEL="${HOME}/.zshrc"
-WORD1='# |::::::::::::::::::>>>antigen' # |<=== Config This
-WORD2='# |::::::::::::::::::<<<antigen' # |<=== Config This
-
-sed -e "/${WORD1}/,/${WORD2}/d"  "${FILEDEL}" > "${FILEDEL}_tmp"
-cp "${FILEDEL}_tmp" "${FILEDEL}"
-rm "${FILEDEL}_tmp"
 
 
-# - **Install antigen - Add**
-# ==============================================
-cat >> $HOME/.zshrc << "EOF"
+FILE_ZSH="${HOME}/.zshrc"
 
-# |::::::::::::::::::>>>antigen
+XXXXXBEGIN='# |::::::::::::: antigen ::::::::::::::>>>' # |<=== Config This
+XXXXXXXEND='# |::::::::::::: antigen ::::::::::::::<<<' # |<=== Config This
+
+sed -e "/${XXXXXBEGIN}/,/${XXXXXXXEND}/d"  "${FILE_ZSH}" > "${FILE_ZSH}_tmp"
+cp "${FILE_ZSH}_tmp" "${FILE_ZSH}"
+rm "${FILE_ZSH}_tmp"
+
+# ======<
+cat >> $FILE_ZSH << EOF
+
+$XXXXXBEGIN
 
 #
 # | Load Antigen
 #
-source $HOME/.antigen/antigen.zsh
+
+source \$HOME/.antigen/antigen.zsh
 
 #
 # | Load various lib files
 #
-antigen bundle robbyrussell/oh-my-zsh lib/
 
 antigen bundle command-not-found
 antigen bundle fabric
@@ -160,41 +195,69 @@ antigen bundle rsync
 antigen-bundle vagrant
 antigen bundle git
 
-antigen-bundle arialdomartini/oh-my-git
+antigen-use oh-my-zsh
 
+antigen bundle robbyrussell/oh-my-zsh lib/
+antigen-bundle arialdomartini/oh-my-git
 antigen-bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions src
 antigen-bundle zsh-users/zsh-history-substring-search
 
 #
-# 1 Antigen Theme
+# | Antigen Theme
 #
+
+# antigen theme Mayccoll/oh-my-git-themes liino
+# antigen theme Mayccoll/oh-my-git-themes liino_red
 antigen theme Mayccoll/oh-my-git-themes remol
+# antigen theme arialdomartini/oh-my-git-themes arialdo-granzestyle
 
 antigen-apply
-# |::::::::::::::::::<<<antigen
+
+$XXXXXXXEND
+
 EOF
+# ======<
 
 
-# ------------------------------------------------------
-# || no root
-# 
+# - **Install Stars**
+# ==============================================
 
-#    cat <<-EOF >> $HOME/.bash_profile
-#    # |::::::::::::::::::>>>proftv
-#    export SHELL=/bin/zsh
-#    exec /bin/zsh -l
-#    # |::::::::::::::::::<<<proftv
-#    EOF
+echo "¿ Want to add stars ?"
+echo "Si -> [1]"
+echo "No -> [2]"
+read varpush
+if [[ $varpush -eq 1 ]] || [[ $varpush -eq "" ]]
+  then
 
-#  cat >> $HOME/.zshrc << "EOF"
-#  
-#  # |::::::::::::::::::>>>stars
-#  echo '
-#  　 ･ ·̩　　 ｡　☆　　　ﾟ｡ ＊ 　 ｡*　　+　 　＊ 　･ ｡☆+　 　＊ 　･ ｡☆
-#  ＊ 　 ｡*　　+　 　＊ 　･ ｡☆ 　　　ﾟ･　　｡ﾟ･　　☆ﾟ　+ ｡　☆　　　ﾟ｡･ ·̩　　
-#  　☆　　　*　　　* 　 。 　 ･ ·̩　　 ｡　☆　　　ﾟ｡　☆　　　*　　　* 　　☆ﾟ　+
-#  　　　ﾟ･　　｡ﾟ･　　☆ﾟ　+ 　☆　　　*　　　* 　 。＊ 　 ｡*　　+　 　＊ 　･ ｡☆
-#  '
-#  # |::::::::::::::::::<<<stars
-#  EOF
+# Delete and Insert text beetwen 2 words
+# ==============================================
+
+
+FILE_ZSH="${HOME}/.zshrc"
+
+XXXXXBEGIN='# |::::::::::::: stars ::::::::::::::>>>' # |<=== Config This
+XXXXXXXEND='# |::::::::::::: stars ::::::::::::::<<<' # |<=== Config This
+
+sed -e "/${XXXXXBEGIN}/,/${XXXXXXXEND}/d"  "${FILE_ZSH}" > "${FILE_ZSH}_tmp"
+cp "${FILE_ZSH}_tmp" "${FILE_ZSH}"
+rm "${FILE_ZSH}_tmp"
+
+# ======<
+cat >> $FILE_ZSH << EOF
+
+$XXXXXBEGIN
+
+echo '
+　 ･ ·̩　　 ｡　☆　　　ﾟ｡ ＊ 　 ｡*　　+　 　＊ 　･ ｡☆+　 　＊ 　･ ｡☆
+＊ 　 ｡*　　+　 　＊ 　･ ｡☆ 　　　ﾟ･　　｡ﾟ･　　☆ﾟ　+ ｡　☆　　　ﾟ｡･ ·̩　　
+　☆　　　*　　　* 　 。 　 ･ ·̩　　 ｡　☆　　　ﾟ｡　☆　　　*　　　* 　　☆ﾟ　+
+　　　ﾟ･　　｡ﾟ･　　☆ﾟ　+ 　☆　　　*　　　* 　 。＊ 　 ｡*　　+　 　＊ 　･ ｡☆
+'
+
+$XXXXXXXEND
+
+EOF
+# ======<
+
+fi
