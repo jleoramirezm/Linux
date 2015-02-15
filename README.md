@@ -157,6 +157,14 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 ### Install more nice stuffs
 
+```sh
+  $ sudo apt-get install gparted
+  $ sudo apt-get install inkscape
+  $ sudo apt-get install glipper
+  $ sudo apt-get install uget
+  $ sudo apt-get install hardinfo
+```
+
 - Install Vagrant
 
 ```sh
