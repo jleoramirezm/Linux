@@ -124,7 +124,9 @@ plugins=(git archlinux django sublime themes python pip node npm history-substri
 
 source \$ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # export LC_TYPE="en_US.UTF-8"
 # export LC_ALL="en_US.UTF-8"
