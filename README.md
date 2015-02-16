@@ -164,6 +164,15 @@ This repo is actually for personal use, but feel free to use it if you find it u
   $ sudo apt-get install uget
   $ sudo apt-get install hardinfo
 ```
+- Install Brackets and Atom
+
+```sh
+  $ sudo add-apt-repository -y ppa:webupd8team/brackets
+  $ sudo add-apt-repository -y ppa:webupd8team/atom
+  $ sudo apt-get update
+  $ sudo apt-get -y install brackets
+  $ sudo apt-get -y install atom
+```
 
 - Install Vagrant
 
