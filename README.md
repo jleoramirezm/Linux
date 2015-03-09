@@ -473,6 +473,10 @@ Libra
 
 ## Open ports
 
+- **Ubuntu**
+
+  $ sudo /sbin/iptables -A INPUT -i eth0 -p tcp --destination-port 3306 -j ACCEPT
+
 - **Centos**
 
 ```sh
