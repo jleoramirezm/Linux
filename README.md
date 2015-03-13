@@ -68,12 +68,17 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # - Meld
 
 
-  # | Virtual tools | #
-  $ wget -O xt  http://git.io/KnwTFw && chmod +x xt && ./xt && rm xt
-      # - VirtualBox
-      # - Puppet
-      # - Docker (disable)
-      # - Vagrant
+  # | Nodejs | #
+  $ wget -O xt  http://git.io/R7LgJg && chmod +x xt && ./xt && rm xt
+      # - **Nodejs Packages**
+      # - **NVM**
+      # Watch files
+      # Yeoman
+      # Web Generator
+
+
+  # | Alias | #
+  $ wget -O xt  http://git.io/ZjXC5g && chmod +x xt && ./xt && rm xt
 
 
   # | LAMP | #
@@ -114,21 +119,16 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # - Ruby
 
 
-  # | Nodejs | #
-  $ wget -O xt  http://git.io/R7LgJg && chmod +x xt && ./xt && rm xt
-      # - **Nodejs Packages**
-      # - **NVM**
-      # Watch files
-      # Yeoman
-      # Web Generator
+  # | Virtual tools | #
+  $ wget -O xt  http://git.io/KnwTFw && chmod +x xt && ./xt && rm xt
+      # - VirtualBox
+      # - Puppet
+      # - Docker (disable)
+      # - Vagrant
 
 
   # | zsh no root| #
   $ wget -O xt  http://git.io/D_Fw_w && chmod +x xt && ./xt && rm xt
-
-
-  # | Alias | #
-  $ wget -O xt  http://git.io/ZjXC5g && chmod +x xt && ./xt && rm xt
 
 
   # | Salt | #
