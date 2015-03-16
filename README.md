@@ -157,6 +157,12 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 ### Install more nice stuffs
 
+- Upgrade libreoffice
+
+```sh
+  $ sudo add-apt-repository ppa:libreoffice/ppa
+```
+
 ```sh
   $ sudo apt-get install gparted
   $ sudo apt-get install inkscape
