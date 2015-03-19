@@ -160,24 +160,27 @@ This repo is actually for personal use, but feel free to use it if you find it u
 - Upgrade libreoffice
 
 ```sh
-  $ sudo add-apt-repository ppa:libreoffice/ppa
+    $
+    sudo add-apt-repository ppa:libreoffice/ppa
 ```
 
 ```sh
-  $ sudo apt-get install gparted
-  $ sudo apt-get install inkscape
-  $ sudo apt-get install glipper
-  $ sudo apt-get install uget
-  $ sudo apt-get install hardinfo
+    $
+    sudo apt-get install gparted
+    sudo apt-get install inkscape
+    sudo apt-get install glipper
+    sudo apt-get install uget
+    sudo apt-get install hardinfo
 ```
 - Install Brackets and Atom
 
 ```sh
-  $ sudo add-apt-repository -y ppa:webupd8team/brackets
-  $ sudo add-apt-repository -y ppa:webupd8team/atom
-  $ sudo apt-get update
-  $ sudo apt-get -y install brackets
-  $ sudo apt-get -y install atom
+    $
+    sudo add-apt-repository -y ppa:webupd8team/brackets
+    sudo add-apt-repository -y ppa:webupd8team/atom
+    sudo apt-get update
+    sudo apt-get -y install brackets
+    sudo apt-get -y install atom
 ```
 
 - Install Vagrant
@@ -195,25 +198,37 @@ This repo is actually for personal use, but feel free to use it if you find it u
 - Install Gimp 2.9
 
 ```sh
-    $ sudo add-apt-repository ppa:otto-kesselgulasch/gimp-edge
+    $ 
+    sudo add-apt-repository ppa:otto-kesselgulasch/gimp-edge
 ```
 
 - Install Gimp Theme photoshop
 
 ```sh
+    $
     http://doctormo.deviantart.com/art/Gimp-2-8-Photoshop-Tweaks-432736644
 ```
 
 - Install last version of gThump
 
 ```sh
-    $ sudo add-apt-repository -y ppa:webupd8team/gthumb
+    $
+    sudo add-apt-repository -y ppa:webupd8team/gthumb
 ```
 
 - Install Koala
 
 ```sh
     http://koala-app.com/
+```
+
+- Install Go For It!
+
+```sh
+    $
+    sudo add-apt-repository ppa:mank319/go-for-it
+  sudo apt-get update
+  sudo apt-get install go-for-it
 ```
 
 -------------------------------------------------------------------------------
