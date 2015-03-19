@@ -227,10 +227,17 @@ This repo is actually for personal use, but feel free to use it if you find it u
 ```sh
     $
     sudo add-apt-repository ppa:mank319/go-for-it
-  sudo apt-get update
-  sudo apt-get install go-for-it
+    sudo apt-get update
+    sudo apt-get install go-for-it
 ```
 
+- Install Krita
+```sh
+    $
+    sudo add-apt-repository ppa:dimula73/krita
+    sudo apt-get update
+    sudo apt-get install krita-2.9 krita-2.9-dbg
+```
 -------------------------------------------------------------------------------
 
 ## More useful programs that are not included in scripts
