@@ -216,6 +216,13 @@ This repo is actually for personal use, but feel free to use it if you find it u
     sudo add-apt-repository -y ppa:webupd8team/gthumb
 ```
 
+- Install Ansible
+
+```sh
+    $ sudo apt-add-repository -y ppa:ansible/ansible
+    $ sudo apt-get update && sudo apt-get install -y ansible
+```
+
 - Install Koala
 
 ```sh
