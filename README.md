@@ -219,8 +219,16 @@ This repo is actually for personal use, but feel free to use it if you find it u
 - Install Ansible
 
 ```sh
-    $ sudo apt-add-repository -y ppa:ansible/ansible
-    $ sudo apt-get update && sudo apt-get install -y ansible
+    $ 
+    sudo apt-add-repository -y ppa:ansible/ansible
+    sudo apt-get update && sudo apt-get install -y ansible
+```
+
+- Install Docker
+
+```sh
+  $
+  wget -qO- https://get.docker.com/ | sh
 ```
 
 - Install Koala
