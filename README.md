@@ -228,6 +228,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 ```sh
   $
+  sudo apt-get install apparmor
   wget -qO- https://get.docker.com/ | sh
   # run without sudo
   sudo gpasswd -a $USER docker
