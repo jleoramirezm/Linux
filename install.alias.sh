@@ -334,7 +334,44 @@ oo-colors () {
 
 
 }
-
+colors () {
+    # echo ""
+    #black
+    echo -e "\e[0;30m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 01"
+    #red
+    echo -e "\e[0;31m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 02"
+    #green
+    echo -e "\e[0;32m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 03"
+    #yellow
+    echo -e "\e[0;33m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 04"
+    #blue
+    echo -e "\e[0;34m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 05"
+    #purple
+    echo -e "\e[0;35m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 06"
+    #cyan
+    echo -e "\e[0;36m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 07"
+    #white
+    echo -e "\e[0;37m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 08"
+    echo ""
+    #black
+    echo -e "\e[1;30m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 09"
+    #red
+    echo -e "\e[1;31m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 10"
+    #green
+    echo -e "\e[1;32m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 11"
+    #yellow
+    echo -e "\e[1;33m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 12"
+    #blue
+    echo -e "\e[1;34m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 13"
+    #purple
+    echo -e "\e[1;35m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 14"
+    #cyan
+    echo -e "\e[1;36m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 15"
+    #white
+    echo -e "\e[1;37m ███ *** AaBbCs ---  ███ \\e[0m   ---> Color 16"
+    echo ""
+    echo -e "\e[0;30m█████\\e[0m\e[0;31m█████\\e[0m\e[0;32m█████\\e[0m\e[0;33m█████\\e[0m\e[0;34m█████\\e[0m\e[0;35m█████\\e[0m\e[0;36m█████\\e[0m\e[0;37m█████\\e[0m\e[1;30m█████\\e[0m\e[1;31m█████\\e[0m\e[1;32m█████\\e[0m\e[1;33m█████\\e[0m\e[1;34m█████\\e[0m\e[1;35m█████\\e[0m\e[1;36m█████\\e[0m\e[1;37m█████\\e[0m\n\e[0;30m█████\\e[0m\e[0;31m█████\\e[0m\e[0;32m█████\\e[0m\e[0;33m█████\\e[0m\e[0;34m█████\\e[0m\e[0;35m█████\\e[0m\e[0;36m█████\\e[0m\e[0;37m█████\\e[0m\e[1;30m█████\\e[0m\e[1;31m█████\\e[0m\e[1;32m█████\\e[0m\e[1;33m█████\\e[0m\e[1;34m█████\\e[0m\e[1;35m█████\\e[0m\e[1;36m█████\\e[0m\e[1;37m█████\\e[0m"
+}
 # |::::::::::::::::::<<<alias
 EOF
 
