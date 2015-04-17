@@ -107,9 +107,9 @@ XXXXXBEGIN='# |::::::::::::: oh-my-zsh ::::::::::::::>>>' # |<=== Config This
 XXXXXXXEND='# |::::::::::::: oh-my-zsh ::::::::::::::<<<' # |<=== Config This
 function_delete_beetwen "\${XXXXXBEGIN}" "\${XXXXXXXEND}" "\${FILE_ZSH}"
 
-echo "${XXXXXBEGIN}\n" >> $FILE_ZSH
+echo "${XXXXXBEGIN}" >> $FILE_ZSH
 wget -qO- https://raw.githubusercontent.com/Mayccoll/Linux/master/files/zshrc >> $FILE_ZSH
-echo "\n${XXXXXXXEND}" >> $FILE_ZSH
+echo "${XXXXXXXEND}" >> $FILE_ZSH
 
 
 # - **Install Syntax highlighting**
@@ -132,9 +132,9 @@ XXXXXBEGIN='# |::::::::::::: antigen ::::::::::::::>>>' # |<=== Config This
 XXXXXXXEND='# |::::::::::::: antigen ::::::::::::::<<<' # |<=== Config This
 function_delete_beetwen "\${XXXXXBEGIN}" "\${XXXXXXXEND}" "\${FILE_ZSH}"
 
-echo "${XXXXXBEGIN}\n" >> $FILE_ZSH
+echo "${XXXXXBEGIN}" >> $FILE_ZSH
 wget -qO- https://raw.githubusercontent.com/Mayccoll/Linux/master/files/antigen.zshrc >> $FILE_ZSH
-echo "\n${XXXXXXXEND}" >> $FILE_ZSH
+echo "${XXXXXXXEND}" >> $FILE_ZSH
 
 
 # - **Install Fonts**
@@ -166,8 +166,8 @@ FILE_ZSH="${HOME}/.zshrc"
 XXXXXBEGIN='# |::::::::::::: stars ::::::::::::::>>>' # |<=== Config This
 XXXXXXXEND='# |::::::::::::: stars ::::::::::::::<<<' # |<=== Config This
 function_delete_beetwen "\${XXXXXBEGIN}" "\${XXXXXXXEND}" "\${FILE_ZSH}"
-echo "${XXXXXBEGIN}\n" >> $FILE_ZSH
+echo "${XXXXXBEGIN}" >> $FILE_ZSH
 wget -qO- https://raw.githubusercontent.com/Mayccoll/Linux/master/files/stars.zshrc >> $FILE_ZSH
-echo "\n${XXXXXXXEND}" >> $FILE_ZSH
+echo "${XXXXXXXEND}" >> $FILE_ZSH
 
 fi
