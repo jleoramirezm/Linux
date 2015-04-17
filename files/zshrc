@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=\$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 # define where custom plugins live:
 ZSH_CUSTOM=~/.oh-my-zsh/custom/
 # Auto Update Enable
@@ -9,7 +9,7 @@ ZSH_THEME="robbyrussell"
 
 plugins=(git archlinux django sublime themes python pip node npm history-substring-search zsh-syntax-highlighting vagrant)
 
-source \$ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 export PATH="$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 

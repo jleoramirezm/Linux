@@ -2,7 +2,7 @@
 # | Load Antigen
 #
 
-source \$HOME/.antigen/antigen.zsh
+source $HOME/.antigen/antigen.zsh
 
 #
 # | Load various lib files
