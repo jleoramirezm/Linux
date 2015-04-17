@@ -198,7 +198,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
 - Install Gimp 2.9
 
 ```sh
-    $ 
+    $
     sudo add-apt-repository ppa:otto-kesselgulasch/gimp-edge
 ```
 
@@ -219,7 +219,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
 - Install Ansible
 
 ```sh
-    $ 
+    $
     sudo apt-add-repository -y ppa:ansible/ansible
     sudo apt-get update && sudo apt-get install -y ansible
 ```
@@ -414,7 +414,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 ## Themes and Icons
 
-Libra 
+Libra
 
 - **Libra**
 
@@ -498,7 +498,7 @@ Libra
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
 
-# Useful
+## Useful
 
 
 
@@ -535,7 +535,30 @@ Libra
   $ /sbin/service iptables restart
 ```
 
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
+## Screencast Animated GIF
+
+```bash
+  $
+  sudo add-apt-repository -y ppa:fossfreedom/byzanz
+  sudo apt-get update
+  sudo apt-get install -y byzanz
+
+  # 1/4
+byzanz-record --x=2600 --y=310 --width=700 --height=400 out.gif  --duration=3
+
+  # Half
+byzanz-record --x=2600 --y=310 --width=700 --height=768 out.gif  --duration=3
+
+  # Full
+byzanz-record --x=1921 --y=310 --width=1366 --height=768 out.gif  --duration=3
+
+```
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 ## SSH
 
   $ ssh-keygen -t rsa -b 4096
