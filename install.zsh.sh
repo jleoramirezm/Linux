@@ -130,6 +130,7 @@ cd ~ && git clone https://github.com/zsh-users/antigen.git .antigen
 FILE_ZSH="${HOME}/.zshrc"
 XXXXXBEGIN='# |::::::::::::: antigen ::::::::::::::>>>' # |<=== Config This
 XXXXXXXEND='# |::::::::::::: antigen ::::::::::::::<<<' # |<=== Config This
+function_delete_beetwen "\${XXXXXBEGIN}" "\${XXXXXXXEND}" "\${FILE_ZSH}"
 
 echo "${XXXXXBEGIN}\n" >> $FILE_ZSH
 wget -qO- https://raw.githubusercontent.com/Mayccoll/Linux/master/files/antigen.zshrc >> $FILE_ZSH
@@ -164,7 +165,7 @@ if [[ $varpush -eq 1 ]] || [[ $varpush -eq "" ]]
 FILE_ZSH="${HOME}/.zshrc"
 XXXXXBEGIN='# |::::::::::::: stars ::::::::::::::>>>' # |<=== Config This
 XXXXXXXEND='# |::::::::::::: stars ::::::::::::::<<<' # |<=== Config This
-
+function_delete_beetwen "\${XXXXXBEGIN}" "\${XXXXXXXEND}" "\${FILE_ZSH}"
 echo "${XXXXXBEGIN}\n" >> $FILE_ZSH
 wget -qO- https://raw.githubusercontent.com/Mayccoll/Linux/master/files/stars.zshrc >> $FILE_ZSH
 echo "\n${XXXXXXXEND}" >> $FILE_ZSH
