@@ -39,7 +39,7 @@ sudo apt-get -f install -y
 wait
 
 
-# - **shutter**
+# - **gpick**
 function_message_title '- **Install gpick**'
 sudo apt-get install -y gpick
 wait
