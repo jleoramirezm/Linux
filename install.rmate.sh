@@ -22,15 +22,9 @@ function_message_title () {
 
 SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-# - **update**
-sudo apt update
-wait
-
 
 # - **rmate**
 function_message_title '- **rmate**'
-curl https://raw.github.com/aurora/rmate/master/rmate > rmate
-sudo cp rmate "~/.local/bin/rmate"
-sudo mv rmate /usr/local/bin
+sudo curl -o /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate
 sudo chmod +x /usr/local/bin/rmate
 sudo iptables -A INPUT -p tcp --dport 52698 -j ACCEPT
