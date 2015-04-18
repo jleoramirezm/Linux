@@ -34,7 +34,4 @@ wait
 source ~/.rvm/scripts/rvm
 wait
 
-# sudo apt-add-repository ppa:rael-gc/rvm
-# sudo apt-get update
-# sudo apt-get install rvm
-# rvm install ruby
+ruby --version
