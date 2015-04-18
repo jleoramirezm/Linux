@@ -79,9 +79,3 @@ function_message_title '- **Git Extras**'
 # https://github.com/visionmedia/git-extras
 (cd /tmp && git clone --depth 1 https://github.com/visionmedia/git-extras.git && cd git-extras && sudo make install)
 wait
-
-
-# - **Nemo Rabbitvcs**
-function_message_title '- **Install Nemo Rabbitvcs**'
-sudo apt-get install -y nemo-rabbitvcs
-wait

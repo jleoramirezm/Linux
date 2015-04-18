@@ -63,9 +63,13 @@ rm $FILE
 wait
 
 
+# - **Nemo Rabbitvcs**
+function_message_title '- **Install Nemo Rabbitvcs**'
+sudo apt-get install -y nemo-rabbitvcs
+wait
+
 
 function_check_intall pyrenamer
 function_check_intall daemonfs
 function_check_intall gufw
 function_check_intall viewnior
-
