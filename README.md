@@ -18,13 +18,6 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # - ack
 
 
-  # | zsh | #
-  $ wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
-      # - Install zsh
-      # - Install Oh-My-ZSH
-      # - Install antigen
-
-
   # | Eessentials | #
   $ wget -O xt  http://git.io/-BDg8Q && chmod +x xt && ./xt && rm xt
       # - Essential tools for compiling from sources
@@ -33,21 +26,17 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # - Cloc
       # - Git Cloc
       # - Git Extras
-      # - Nemo Rabbitvcs
 
 
-  # | Extras | #
-  $ wget -O xt  http://git.io/OBOaLQ && chmod +x xt && ./xt && rm xt
-      # - Pyrenamer
-      # - DaemonFSk
-      # - Gufw
-      # - Viewnior
+  # | zsh | #
+  $ wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
+      # - Install zsh
+      # - Install Oh-My-ZSH
+      # - Install antigen
 
 
-  # | Design | #
-  $ wget -O xt  http://git.io/Nov7 && chmod +x xt && ./xt && rm xt
-      # - gPick
-      # - Shutter
+  # | Alias | #
+  $ wget -O xt  http://git.io/ZjXC5g && chmod +x xt && ./xt && rm xt
 
 
   # | Customize | #
@@ -56,6 +45,21 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # - Themes Libra Flattastic
       # - Grub Customizer
       # - Cairo-Dock
+
+
+  # | Extras | #
+  $ wget -O xt  http://git.io/OBOaLQ && chmod +x xt && ./xt && rm xt
+      # - Pyrenamer
+      # - DaemonFSk
+      # - Gufw
+      # - Viewnior
+      # - Nemo Rabbitvcs
+
+
+  # | Design | #
+  $ wget -O xt  http://git.io/Nov7 && chmod +x xt && ./xt && rm xt
+      # - gPick
+      # - Shutter
 
 
   # | Tools | #
@@ -77,8 +81,18 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # Web Generator
 
 
-  # | Alias | #
-  $ wget -O xt  http://git.io/ZjXC5g && chmod +x xt && ./xt && rm xt
+  # | Python | #
+  $ wget -O xt  http://git.io/S63sLQ && chmod +x xt && ./xt && rm xt
+      # - Python
+
+
+  # | Ruby | #
+  $ wget -O xt  http://git.io/ZFV0PA && chmod +x xt && ./xt && rm xt
+      # - Ruby
+
+
+  # | Ruby 2.2.1 | #
+  $ wget -O xt  http://git.io/vvNB7 && chmod +x xt && ./xt && rm xt
 
 
   # | LAMP | #
@@ -109,30 +123,8 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # - php5-mysql
 
 
-  # | Python | #
-  $ wget -O xt  http://git.io/S63sLQ && chmod +x xt && ./xt && rm xt
-      # - Python
-
-
-  # | Ruby | #
-  $ wget -O xt  http://git.io/ZFV0PA && chmod +x xt && ./xt && rm xt
-      # - Ruby
-
-
-  # | Virtual tools | #
-  $ wget -O xt  http://git.io/KnwTFw && chmod +x xt && ./xt && rm xt
-      # - VirtualBox
-      # - Puppet
-      # - Docker (disable)
-      # - Vagrant
-
-
   # | zsh no root| #
   $ wget -O xt  http://git.io/D_Fw_w && chmod +x xt && ./xt && rm xt
-
-
-  # | Salt | #
-  $ wget -O xt  http://git.io/QleHew && chmod +x xt && ./xt && rm xt
 
 
   # | rMate | #
