@@ -20,6 +20,10 @@ function_message_title () {
   echo -e "${RS}"
 }
 
+function_check_intall () {
+    type -P $1 &>/dev/null && echo -e  "- Installed - ${GREEN} Ok ${RS} - $1" || echo -e  "- Install - ${RED} No ${RS} - $1"
+}
+
 SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 
@@ -77,3 +81,9 @@ function_message_title '- **ack**'
 sudo apt-get install -y ack-grep
 sudo ln -s /usr/bin/ack-grep /usr/bin/ack
 wait
+
+function_check_intall git
+function_check_intall curl
+function_check_intall vim
+function_check_intall htop
+function_check_intall tree
