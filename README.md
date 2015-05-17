@@ -249,6 +249,13 @@ This repo is actually for personal use, but feel free to use it if you find it u
     sudo apt-get update
     sudo apt-get install krita-2.9 krita-2.9-dbg
 ```
+
+- Install inotify
+```sh
+  $
+  sudo echo "deb http://us.archive.ubuntu.com/ubuntu precise main universe" >> /etc/apt/sources.list
+  sudo apt-get update
+  sudo apt-get install inotify-tools
 -------------------------------------------------------------------------------
 
 ## More useful programs that are not included in scripts
