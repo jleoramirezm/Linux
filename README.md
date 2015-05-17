@@ -411,9 +411,19 @@ Libra
 - **Libra**
 
 ```bash
-  $ sudo add-apt-repository ppa:noobslab/themes
-  $ sudo apt-get update
-  $ sudo apt-get install libra-theme
+  $ 
+  sudo add-apt-repository ppa:noobslab/themes
+  sudo apt-get update
+  sudo apt-get install libra-theme
+```
+
+- **Libra**
+- 
+```bash
+  $
+  sudo add-apt-repository ppa:noobslab/themes
+  sudo apt-get update
+  sudo apt-get install vertex-theme
 ```
 
 - **Flattastic**
