@@ -811,59 +811,17 @@ byzanz-record --x=1921 --y=310 --width=1366 --height=768 out.gif  --duration=3
     exec('tar -xzf SecretariaSalud.tar.gz',$ret);
 ```
 
+## Clear Memory Cache 
 
-## Vagrant
-
-  $ vagrant box add [name] [url]
-
-  $ vagrant box list
-
-  $ vagrant box remove [name]
-
-  $ vagrant init ubuntu/trusty64
-
-  $ vagrant init [BOX_NAME] [URL]
-
-  $ vagrant up
-
-  $ vagrant ssh
-
-  $ vagrant suspend
-
-  $ vagrant resume
-
-  $ vagrant halt
-
-  $ vagrant restart
-
-  $ vagrant destroy
-
-
-
-
-
-    config.vm.synced_folder [Local], [Vagrant box]
-
-## PUPPET
-
-  $ puppet apply --noop
-
-  $ puppet apply --noop
+```bash
+  sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"
+```
 
 ## Web Dev Utils
 
 - **Koala** - http://koala-app.com/
 - **Pleeease** - http://pleeease.io/
 
-# Alias
-
-```sh
-    alias = git ls-files -v | grep '^[[:lower:]]'
-```
 
 
-## APT
 
-```bash
-  $ sudo vim /etc/lsb-release
-  $ sudo vim /etc/apt/sources.list
