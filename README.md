@@ -394,6 +394,21 @@ This repo is actually for personal use, but feel free to use it if you find it u
   $ sudo apt-get install -y salt-syndic
 ```
 
+- **Zentyal**
+
+```bash
+  $
+  sudo add-apt-repository "deb http://archive.zentyal.org/zentyal 4.1 main"
+  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 10E239FF
+  wget -q http://keys.zentyal.org/zentyal-4.1-archive.asc -O- | sudo apt-key add -
+  sudo apt-get update
+  sudo apt-get install zentyal
+  #
+  # https://SERVER IP
+  # https://SERVER IP:8443
+```
+
+
 -------------------------------------------------------------------------------
 
 ## **More nice apps**
