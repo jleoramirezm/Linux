@@ -256,6 +256,8 @@ This repo is actually for personal use, but feel free to use it if you find it u
   sudo echo "deb http://us.archive.ubuntu.com/ubuntu precise main universe" >> /etc/apt/sources.list
   sudo apt-get update
   sudo apt-get install inotify-tools
+```
+
 -------------------------------------------------------------------------------
 
 ## More useful programs that are not included in scripts
@@ -829,6 +831,13 @@ byzanz-record --x=1921 --y=310 --width=1366 --height=768 out.gif  --duration=3
 - **Koala** - http://koala-app.com/
 - **Pleeease** - http://pleeease.io/
 
+## add-apt-repository: command not found
 
-
-
+```bash
+  $
+  sudo apt-get install python-software-properties
+  Update apt-file:
+  apt-file update
+  apt-file search add-apt-repository
+  sudo apt-get install software-properties-common
+```
