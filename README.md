@@ -258,6 +258,16 @@ This repo is actually for personal use, but feel free to use it if you find it u
   sudo apt-get install inotify-tools
 ```
 
+- Install vlc
+```sh
+  $
+  sudo add-apt-repository ppa:videolan/stable-daily
+  sudo apt-get update
+  sudo apt-get purge vlc
+  sudo apt-get install vlc-nox
+  sudo apt-get install vlc
+```
+
 -------------------------------------------------------------------------------
 
 ## More useful programs that are not included in scripts
