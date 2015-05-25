@@ -856,3 +856,9 @@ byzanz-record --x=1921 --y=310 --width=1366 --height=768 out.gif  --duration=3
   apt-file search add-apt-repository
   sudo apt-get install software-properties-common
 ```
+
+## Remove All Unused Linux Kernel Headers, Images and Modules
+
+```
+dpkg -l 'linux-*' | sed '/^ii/!d;/'"$(uname -r | sed "s/\(.*\)-\([^0-9]\+\)/\1/")"'/d;s/^[^ ]* [^ ]* \([^ ]*\).*/\1/;/[0-9]/!d' | xargs sudo apt-get -y purge
+```
