@@ -36,11 +36,11 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 
   # | Alias | #
-  $ wget -O xt  http://git.io/ZjXC5g && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/vkvZe && chmod +x xt && ./xt && rm xt
 
 
   # | Stars | #
-  $ wget -O xt  http://git.io/gE58Qg && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/vkvq9 && chmod +x xt && ./xt && rm xt
 
 
   # | Customize | #
