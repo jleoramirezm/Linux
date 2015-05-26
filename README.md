@@ -95,6 +95,10 @@ This repo is actually for personal use, but feel free to use it if you find it u
   $ wget -O xt  http://git.io/vvNB7 && chmod +x xt && ./xt && rm xt
 
 
+  # | Syncthing | #
+  $ wget -O xt  http://git.io/vkep4 && chmod +x xt && ./xt && rm xt
+
+
   # | LAMP | #
   $ wget -O xt  http://git.io/83F6CQ && chmod +x xt && ./xt && rm xt
       # - apache2
@@ -445,14 +449,14 @@ Libra
 - **Libra**
 
 ```bash
-  $ 
+  $
   sudo add-apt-repository ppa:noobslab/themes
   sudo apt-get update
   sudo apt-get install libra-theme
 ```
 
 - **Libra**
-- 
+-
 ```bash
   $
   sudo add-apt-repository ppa:noobslab/themes
@@ -845,7 +849,7 @@ byzanz-record --x=1921 --y=310 --width=1366 --height=768 out.gif  --duration=3
     exec('tar -xzf SecretariaSalud.tar.gz',$ret);
 ```
 
-## Clear Memory Cache 
+## Clear Memory Cache
 
 ```bash
   sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"
