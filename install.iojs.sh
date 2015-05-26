@@ -31,3 +31,5 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.3/install.sh | 
 source ~/.zshrc
 
 nvm install iojs
+
+source ~/.zshrc

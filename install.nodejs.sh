@@ -42,22 +42,6 @@ EOF
 
 
 
-# - **Nodejs Packages**
-# ==============================================
-npm install -g bower
-npm install -g less
-npm install -g grunt
-npm install -g grunt-cli
-    # Watch files and run a command when they change
-npm install -g wr
-    # Yeoman
-npm install -g yo
-    # Web Generator
-npm install -g generator-webapp
-npm install -g generator-generator
-
-
-
 # | **NVM - Node Version Manager**
 # | https://github.com/creationix/nvm
 # |     Use:
@@ -91,4 +75,3 @@ source ~/.nvm/nvm.sh
 EOF
 
 source $HOME/.zshrc
-

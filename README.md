@@ -39,6 +39,10 @@ This repo is actually for personal use, but feel free to use it if you find it u
   $ wget -O xt  http://git.io/ZjXC5g && chmod +x xt && ./xt && rm xt
 
 
+  # | Stars | #
+  $ wget -O xt  http://git.io/gE58Qg && chmod +x xt && ./xt && rm xt
+
+
   # | Customize | #
   $ wget -O xt  http://git.io/h9dVjw && chmod +x xt && ./xt && rm xt
       # - Install Pantheon Desktop Environment
@@ -70,6 +74,12 @@ This repo is actually for personal use, but feel free to use it if you find it u
       # - Remmina
       # - Cryptkeeper
       # - Meld
+
+
+  # | io.js | #
+  $ wget -O xt  http://git.io/vkvUs && chmod +x xt && ./xt && rm xt
+      # - nvm  
+      # - io.js
 
 
   # | Nodejs | #
