@@ -26,7 +26,7 @@ SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 # - **Apache2**
 function_message_title '- **Installing io.js**'
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.3/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.3/install.sh | bash
 
 source ~/.zshrc
 
