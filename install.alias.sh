@@ -44,7 +44,7 @@ XXXXXXXEND='# |::::::::::::: alias ::::::::::::::<<<' # |<=== Config This
 function_delete_beetwen "\${XXXXXBEGIN}" "\${XXXXXXXEND}" "\${FILE_ZSH}"
 
 echo "${XXXXXBEGIN}" >> $FILE_ZSH
-wget -qO- https://raw.githubusercontent.com/Mayccoll/Linux/master/files/alias >> $FILE_ZSH
+wget -qO- https://raw.githubusercontent.com/Mayccoll/Linux/master/files/alias.zshrc >> $FILE_ZSH
 echo "${XXXXXXXEND}" >> $FILE_ZSH
 
 source $HOME/.zshrc
