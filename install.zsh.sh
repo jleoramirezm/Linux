@@ -150,24 +150,3 @@ cp patched/*.ttf ~/.fonts
 
 # update the font-info cache
 sudo fc-cache -fv ~/.fonts
-
-
-# - **Install Stars**
-# ==============================================
-
-echo "¿ Want to add stars ?"
-echo "Si -> [1]"
-echo "No -> [2]"
-read varpush
-if [[ $varpush -eq 1 ]] || [[ $varpush -eq "" ]]
-  then
-
-FILE_ZSH="${HOME}/.zshrc"
-XXXXXBEGIN='# |::::::::::::: stars ::::::::::::::>>>' # |<=== Config This
-XXXXXXXEND='# |::::::::::::: stars ::::::::::::::<<<' # |<=== Config This
-function_delete_beetwen "\${XXXXXBEGIN}" "\${XXXXXXXEND}" "\${FILE_ZSH}"
-echo "${XXXXXBEGIN}" >> $FILE_ZSH
-wget -qO- https://raw.githubusercontent.com/Mayccoll/Linux/master/files/stars.zshrc >> $FILE_ZSH
-echo "${XXXXXXXEND}" >> $FILE_ZSH
-
-fi

@@ -32,4 +32,6 @@ source ~/.zshrc
 
 nvm install iojs
 
+nvm alias default iojs
+
 source ~/.zshrc
