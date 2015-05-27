@@ -1,6 +1,5 @@
 alias sudo='sudo '
 
-unalias ll
 alias ll='ls -Xalh --color=auto'
 alias la='ls -A --color=auto'
 alias l='ls -CF --color=auto'
