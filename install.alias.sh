@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 # Reset color
 RS="\e[0m"
 # Basic Colors
@@ -25,6 +23,7 @@ function_message_title () {
   echo -e "${RS}"
 }
 
+
 function_delete_beetwen () {
   eval XXXXXBEGIN="$1"
   eval XXXXXXXEND="$2"
@@ -36,15 +35,12 @@ function_delete_beetwen () {
 
 
 
-# - **Insert Alias**
-# ==============================================
+
+
 FILE_ZSH="${HOME}/.zshrc"
 XXXXXBEGIN='# |::::::::::::: alias ::::::::::::::>>>' # |<=== Config This
 XXXXXXXEND='# |::::::::::::: alias ::::::::::::::<<<' # |<=== Config This
 function_delete_beetwen "\${XXXXXBEGIN}" "\${XXXXXXXEND}" "\${FILE_ZSH}"
-
 echo "${XXXXXBEGIN}" >> $FILE_ZSH
 wget -qO- https://raw.githubusercontent.com/Mayccoll/Linux/master/files/alias.zshrc >> $FILE_ZSH
 echo "${XXXXXXXEND}" >> $FILE_ZSH
-
-source $HOME/.zshrc
