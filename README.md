@@ -280,6 +280,10 @@ This repo is actually for personal use, but feel free to use it if you find it u
   sudo apt-get purge vlc
   sudo apt-get install vlc-nox
   sudo apt-get install vlc
+  
+  ##
+  sudo add-apt-repository ppa:mc3man/trusty-media
+  sudo apt-get update && sudo apt-get install vlc 
 ```
 
 -------------------------------------------------------------------------------
