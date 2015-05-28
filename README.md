@@ -36,7 +36,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 
   # | Alias | #
-  $ wget -O xt  http://git.io/vkvZe && chmod +x xt && ./xt && rm xt
+  $ wget -O xt  http://git.io/vkcDn && chmod +x xt && ./xt && rm xt
 
 
   # | Stars | #
