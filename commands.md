@@ -1,6 +1,24 @@
 # Useful Linux Commands
 
 ----------------------------------------------------------------------
+## Rsync
+
+- **Local**
+
+```bash
+  $
+  rsync -zvhar backup.tar /tmp/backups/
+```
+
+- **Remote**
+
+```bash
+  $
+  rsync -azrP source uesr@host:/destination
+```
+
+
+----------------------------------------------------------------------
 
 ## Montar Driver
 
@@ -122,7 +140,6 @@
 - **Upload file**
 
 ```bash
-    $
   $
   scp FILE USER@SERVER:LOCATION
   scp SourceFile user@host:directory/TargetFile
