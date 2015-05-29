@@ -5,7 +5,7 @@ This repo is actually for personal use, but feel free to use it if you find it u
 
 ## Commands
 
-
+https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 ## Fast Install
 
