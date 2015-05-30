@@ -472,6 +472,22 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
   sudo apt install -y trickle
 ```
 
+- **Composer, Laravel, Artisan**
+
+```bash
+  $
+  sudo apt-get install php5-cli
+  curl -sS https://getcomposer.org/installer | php
+  
+  sudo mv composer.phar /usr/bin/composer
+
+  composer global require "laravel/installer=~1.1"
+  
+  echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ${HOME}/.zshrc
+
+  echo 'alias artisan="php artisan"' >> ${HOME}/.zshrc
+```
+
 -------------------------------------------------------------------------------
 
 ## **More nice apps**
