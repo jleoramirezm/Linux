@@ -515,8 +515,8 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 ```bash
   $
-  sudo add-apt-repository ppa:noobslab/themes \
-  sudo apt-get update \
+  sudo add-apt-repository ppa:noobslab/themes && \
+  sudo apt-get update && \
   sudo apt-get install libra-theme
 ```
 
@@ -524,8 +524,8 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 ```bash
   $
-  sudo add-apt-repository ppa:noobslab/themes \
-  sudo apt-get update \
+  sudo add-apt-repository ppa:noobslab/themes && \
+  sudo apt-get update && \
   sudo apt-get install vertex-theme
 ```
 
