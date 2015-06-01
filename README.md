@@ -488,6 +488,17 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
   echo 'alias artisan="php artisan"' >> ${HOME}/.zshrc
 ```
 
+- **Megadown**
+
+```bash
+  $
+  sudo apt-get install pv
+  sudo apt-get install php5-cli
+  git clone https://github.com/tonikelope/megadown.git
+  cd megadown
+  sudo chmod +x megadown
+```
+
 -------------------------------------------------------------------------------
 
 ## **More nice apps**
