@@ -39,10 +39,17 @@
 
 ```bash
   $
-  sudo add-apt-repository -y ppa:fossfreedom/byzanz \
-  sudo apt-get update \
+  sudo add-apt-repository -y ppa:fossfreedom/byzanz && \
+  sudo apt-get update && \
   sudo apt-get install -y byzanz
 
+  # 1/4
+  byzanz-record --x=980 --y=0 --width=960 --height=540 out.gif  --duration=15
+  
+  # Half
+  byzanz-record --x=980 --y=0 --width=960 --height=1080 out.gif  --duration=15
+  
+  ## SECOND MONITOR
   # 1/4
   byzanz-record --x=2600 --y=310 --width=700 --height=400 out.gif  --duration=15
 
@@ -51,6 +58,7 @@
 
   # Full
   byzanz-record --x=1921 --y=310 --width=1366 --height=768 out.gif  --duration=15
+  
 
 ```
 
