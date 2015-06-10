@@ -226,8 +226,9 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 ```bash
     $
-    sudo apt-add-repository -y ppa:ansible/ansible
-    sudo apt-get update && sudo apt-get install -y ansible
+    sudo apt-add-repository -y ppa:ansible/ansible && \
+    sudo apt-get update && \
+    sudo apt-get install -y ansible
 ```
 
 - **Install Docker**
@@ -251,9 +252,9 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 ```bash
     $
-    sudo add-apt-repository ppa:mank319/go-for-it
-    sudo apt-get update
-    sudo apt-get install go-for-it
+    sudo add-apt-repository -y ppa:mank319/go-for-it && \
+    sudo apt-get update && \
+    sudo apt-get install -y go-for-it
 ```
 
 - **Install Krita**
