@@ -354,8 +354,9 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 ```bash
   $
-  sudo apt-get install openjdk-7-jdk openjdk-7-jre icedtea-7-plugin
-  sudo update-alternatives --config java
+  sudo add-apt-repository -y ppa:webupd8team/java
+  sudo apt-get update
+  sudo apt-get install -y oracle-java8-installer
 ```
 
 
