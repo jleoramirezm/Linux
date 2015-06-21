@@ -11,7 +11,8 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 ```bash
   # | Basics | #
-  $ wget -O xt  http://git.io/Dncnzw && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/Dncnzw && chmod +x xt && ./xt && rm xt
       # - Extras
       # - Progress bar
       # - Git
@@ -23,7 +24,8 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 
   # | Eessentials | #
-  $ wget -O xt  http://git.io/-BDg8Q && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/-BDg8Q && chmod +x xt && ./xt && rm xt
       # - Essential tools for compiling from sources
       # - Packing software
       # - zssh
@@ -33,30 +35,34 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 
   # | zsh | #
-  $ wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
       # - Install zsh
       # - Install Oh-My-ZSH
       # - Install antigen
 
 
   # | Alias | #
-  $ wget -O xt  http://git.io/vkcDn && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/vkcDn && chmod +x xt && ./xt && rm xt
 
 
   # | Stars | #
-  $ wget -O xt  http://git.io/vkvq9 && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/vkvq9 && chmod +x xt && ./xt && rm xt
 
 
   # | Customize | #
-  $ wget -O xt  http://git.io/h9dVjw && chmod +x xt && ./xt && rm xt
-      # - Install Pantheon Desktop Environment
+  $
+  wget -O xt  http://git.io/h9dVjw && chmod +x xt && ./xt && rm xt
       # - Themes Libra Flattastic
       # - Grub Customizer
       # - Cairo-Dock
 
 
   # | Extras | #
-  $ wget -O xt  http://git.io/OBOaLQ && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/OBOaLQ && chmod +x xt && ./xt && rm xt
       # - Pyrenamer
       # - DaemonFSk
       # - Gufw
@@ -65,13 +71,15 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 
   # | Design | #
-  $ wget -O xt  http://git.io/Nov7 && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/Nov7 && chmod +x xt && ./xt && rm xt
       # - gPick
       # - Shutter
 
 
   # | Tools | #
-  $ wget -O xt  http://git.io/8yxL5Q && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/8yxL5Q && chmod +x xt && ./xt && rm xt
       # - Samba
       # - Filezilla
       # - mysql-workbench
@@ -81,38 +89,45 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 
   # | io.js | #
-  $ wget -O xt  http://git.io/vkvUs && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/vkvUs && chmod +x xt && ./xt && rm xt
       # - nvm
       # - npm
       # - io.js
 
 
   # | Nodejs | #
-  $ wget -O xt  http://git.io/R7LgJg && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/R7LgJg && chmod +x xt && ./xt && rm xt
       # - Nodejs
       # - nvm
 
 
   # | Python | #
-  $ wget -O xt  http://git.io/S63sLQ && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/S63sLQ && chmod +x xt && ./xt && rm xt
       # - Python
 
 
   # | Ruby | #
-  $ wget -O xt  http://git.io/ZFV0PA && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/ZFV0PA && chmod +x xt && ./xt && rm xt
       # - Ruby
 
 
   # | Ruby 2.2.1 | #
-  $ wget -O xt  http://git.io/vvNB7 && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/vvNB7 && chmod +x xt && ./xt && rm xt
 
 
   # | Syncthing | #
-  $ wget -O xt  http://git.io/vkep4 && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/vkep4 && chmod +x xt && ./xt && rm xt
 
 
   # | LAMP | #
-  $ wget -O xt  http://git.io/83F6CQ && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/83F6CQ && chmod +x xt && ./xt && rm xt
       # - apache2
       # - libapache2-mod-php5
       # - php-apc
@@ -140,11 +155,13 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 
   # | zsh no root| #
-  $ wget -O xt  http://git.io/D_Fw_w && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/D_Fw_w && chmod +x xt && ./xt && rm xt
 
 
   # | rMate | #
-  $ wget -O xt  http://git.io/gE58Qg && chmod +x xt && ./xt && rm xt
+  $
+  wget -O xt  http://git.io/gE58Qg && chmod +x xt && ./xt && rm xt
 ```
 
 -------------------------------------------------------------------------------
@@ -479,11 +496,11 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
   $
   sudo apt-get install php5-cli
   curl -sS https://getcomposer.org/installer | php
-  
+
   sudo mv composer.phar /usr/bin/composer
 
   composer global require "laravel/installer=~1.1"
-  
+
   echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ${HOME}/.zshrc
 
   echo 'alias artisan="php artisan"' >> ${HOME}/.zshrc
@@ -527,18 +544,18 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 ```bash
   $
-  sudo add-apt-repository ppa:noobslab/themes && \
+  sudo add-apt-repository -y ppa:noobslab/themes && \
   sudo apt-get update && \
-  sudo apt-get install libra-theme
+  sudo apt-get install -y libra-theme
 ```
 
 - **vertex**
 
 ```bash
   $
-  sudo add-apt-repository ppa:noobslab/themes && \
+  sudo add-apt-repository -y ppa:noobslab/themes && \
   sudo apt-get update && \
-  sudo apt-get install vertex-theme
+  sudo apt-get install -y vertex-theme
 ```
 
 - **Flattastic**
