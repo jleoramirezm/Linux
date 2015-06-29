@@ -7,7 +7,7 @@
 
 ```bash
   $
-  rsync -zvhar backup.tar /tmp/backups/
+  rsync -zvharP backup.tar /tmp/backups/
 ```
 
 - **Remote**
