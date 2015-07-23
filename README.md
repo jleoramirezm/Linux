@@ -153,6 +153,8 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
       # - mysql-server
       # - php5-mysql
 
+  # | Fix Locale | #
+  wget -O xt  http://git.io/vYshc && chmod +x xt && ./xt && rm xt
 
   # | zsh no root| #
   $
