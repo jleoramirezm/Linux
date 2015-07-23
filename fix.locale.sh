@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Reset color
 RS="\e[0m"
 # Basic Colors
@@ -25,22 +24,10 @@ function_message_title () {
 
 function_message_title '- **Fix Locale**'
 
-# export LANGUAGE=en_US.UTF-8  && \
-# export LANG=en_US.UTF-8 && \
-# export LC_ALL=en_US.UTF-8 && \
-# sudo locale-gen en_US.UTF-8 && \
-# sudo dpkg-reconfigure locales
-#
-# export LANGUAGE=es_ES.UTF-8 && \
-# export LANG=es_ES.UTF-8 && \
-# export LC_ALL=es_ES.UTF-8 && \
-# sudo locale-gen es_ES.UTF-8 && \
-# sudo dpkg-reconfigure locales
+export LANGUAGE=en_US.UTF-8   && \
+export LANG=en_US.UTF-8       && \
+export LC_ALL=en_US.UTF-8     && \
+sudo locale-gen en_US.UTF-8   && \
+sudo dpkg-reconfigure -f noninteractive locales
 
-
-
-sudo locale-gen --purge en_US.UTF-8
-sudo echo -e 'LANG="en_US.UTF-8"\nLANGUAGE="en_US:en"\n' > /etc/default/locale
-
-sudo locale-gen --purge es_ES.UTF-8
-sudo echo -e 'LANG="es_ES.UTF-8"\nLANGUAGE="es_ES:es"\n' > /etc/default/locale
+sudo apt-get install --reinstall debconf locales-all
