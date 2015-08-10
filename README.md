@@ -322,15 +322,16 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 ```bash
   $
-  sudo add-apt-repository ppa:videolan/stable-daily
+  sudo add-apt-repository -y ppa:videolan/stable-daily
   sudo apt-get update
   sudo apt-get purge vlc
   sudo apt-get install vlc-nox
   sudo apt-get install vlc
 
   ##
-  sudo add-apt-repository ppa:mc3man/trusty-media
-  sudo apt-get update && sudo apt-get install vlc
+  sudo add-apt-repository -y ppa:mc3man/trusty-media /
+  sudo apt-get update / 
+  sudo apt-get install -y vlc
 ```
 
 - **wkhtmltopdf**
