@@ -566,6 +566,14 @@ https://packages.debian.org/sid/amd64/megatools/download
   megafs       Mount remote filesystem locally.
 ```
 
+- **Xtreme Download Manager**
+
+```bash
+  sudo add-apt-repository -y ppa:noobslab/apps && /
+  sudo apt-get update && /
+  sudo apt-get install -y xdman
+```
+
 -------------------------------------------------------------------------------
 
 ## **More nice apps**
