@@ -356,7 +356,7 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
     # Requirements
     $
-    sudo apt install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+    sudo apt install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 
     ## Ex:
     $
