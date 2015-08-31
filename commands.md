@@ -44,7 +44,7 @@
   sudo apt-get install -y byzanz
 
   # 1/4
-  byzanz-record --x=980 --y=0 --width=960 --height=540 out.gif  --duration=15
+  byzanz-record --x=960 --y=0 --width=960 --height=520 out.gif  --duration=15
 
   # Half
   byzanz-record --x=980 --y=0 --width=960 --height=1080 out.gif  --duration=15
