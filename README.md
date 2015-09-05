@@ -574,6 +574,42 @@ https://packages.debian.org/sid/amd64/megatools/download
   sudo apt-get install -y xdman
 ```
 
+- **Linux Brew**
+
+Pre:
+
+```bash 
+sudo apt-get install -y build-essential \
+                        curl \
+                        git \
+                        m4 \
+                        ruby \
+                        texinfo \
+                        libbz2-dev \
+                        libcurl4-openssl-dev \
+                        libexpat-dev \
+                        libncurses-dev \
+                        zlib1g-dev
+```
+
+Install:
+
+```bash
+  git clone https://github.com/Homebrew/linuxbrew.git ~/.linuxbrew
+```
+
+Add to .zshrc
+
+```bash
+cat >> $HOME/.zshrc << "EOF"
+# |::::::::::::: Linux Brew ::::::::::::::>>>
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+# |::::::::::::: Linux Brew ::::::::::::::<<<
+EOF
+```
+
 -------------------------------------------------------------------------------
 
 ## **More nice apps**
