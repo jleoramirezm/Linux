@@ -729,3 +729,18 @@ EOF
   sudo apt install faience-theme faience-icon-theme
 
 ```
+
+
+
+-------------------------------------------------------------------------------
+
+
+## Linux Desktop
+
+``` bash
+  $
+  sudo add-apt-repository -y ppa:gnome3-team/gnome3-staging && \
+  sudo add-apt-repository -y ppa:gnome3-team/gnome3 && \
+  sudo apt-get update && \
+  sudo apt-get install -y gnome
+```
