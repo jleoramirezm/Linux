@@ -610,6 +610,15 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 EOF
 ```
 
+- **Nasc - Math**
+
+```bash
+  $
+  sudo apt-add-repository -y ppa:nasc-team/daily && \
+  sudo apt-get update && \
+  sudo apt-get install -y nasc
+```
+
 -------------------------------------------------------------------------------
 
 ## **More nice apps**
