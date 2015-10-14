@@ -88,19 +88,11 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
       # - Meld
 
 
-  # | io.js | #
-  $
-  wget -O xt  http://git.io/vkvUs && chmod +x xt && ./xt && rm xt
-      # - nvm
-      # - npm
-      # - io.js
-
-
   # | Nodejs | #
   $
   wget -O xt  http://git.io/R7LgJg && chmod +x xt && ./xt && rm xt
       # - Nodejs
-      # - nvm
+      # - npm
 
 
   # | Python | #
@@ -330,7 +322,7 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
   ##
   sudo add-apt-repository -y ppa:mc3man/trusty-media /
-  sudo apt-get update / 
+  sudo apt-get update /
   sudo apt-get install -y vlc
 ```
 
@@ -578,7 +570,7 @@ https://packages.debian.org/sid/amd64/megatools/download
 
 Pre:
 
-```bash 
+```bash
 sudo apt-get install -y build-essential \
                         curl \
                         git \
