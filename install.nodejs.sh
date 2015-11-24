@@ -1,4 +1,7 @@
 #!/bin/bash
 
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+# Using Ubuntu
+# https://github.com/nodesource/distributions
+
+curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 sudo apt-get install -y nodejs
