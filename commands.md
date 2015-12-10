@@ -7,7 +7,7 @@
 
 ```bash
   $
-  rsync -zvharP backup.tar /tmp/backups/
+  rsync -vharP backup.tar /tmp/backups/
 ```
 
 - **Remote**
@@ -17,6 +17,17 @@
   rsync -azrP source uesr@host:/destination
 ```
 
+- **Help**
+
+```bash
+  -v, --verbose               increase verbosity
+  -h, --human-readable        output numbers in a human-readable format
+  -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
+  -r, --recursive             recurse into directories
+  -P  --progress              show progress during transfer
+  
+  -z, --compress              compress file data during the transfer
+```
 
 ----------------------------------------------------------------------
 
