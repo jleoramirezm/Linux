@@ -259,7 +259,7 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
   # Install Docker Compose
   sudo apt-get install python-pip
-  pip install docker-compose
+  sudo pip install docker-compose
 ```
 
 - **Install Kitematic**
