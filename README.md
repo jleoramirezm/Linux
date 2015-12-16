@@ -257,6 +257,9 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
   # tell the current terminal about the new docker group changes
   newgrp docker
 
+  # Install Docker Compose
+  sudo apt-get install python-pip
+  pip install docker-compose
 ```
 
 - **Install Kitematic**
