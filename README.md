@@ -246,7 +246,7 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 ```bash
   # install docker
-  curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+  curl -sSL https://get.docker.com/ | sudo sh
 
   # add my user to docker group
   sudo gpasswd -a ${USER} docker
