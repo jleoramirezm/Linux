@@ -397,3 +397,40 @@
   sudo locale-gen es_ES.UTF-8   && \
   sudo dpkg-reconfigure locales
 ```
+
+
+
+## Intalar ack
+
+```bash
+    sudo apt-get install ack
+
+    OR
+
+    curl http://betterthangrep.com/ack-standalone > ~/bin/ack && chmod 0755 !#:3
+```
+
+## Uso (cuando es expresion regular la busqueda deber ir en comillas simples)
+
+```bash
+    ack SEARCH
+    ack 'SEARCH'
+```
+
+## ack - Regex - Finding Lines Containing Certain Words
+
+```bash
+    ^.*\b(SEARCH1|SEARCH2|SEARCH3)\b.*$
+```
+
+## ack - Search and Replace
+
+```bash
+    ack -l 'pattern' | xargs perl -pi -E 's/pattern/replacement/g'
+```
+
+## ack - Combinar
+
+```bash
+    ack -l '^.*\b(SEARCH1|SEARCH2|SEARCH3)\b.*$' | xargs perl -pi -E 's/^.*\b(SEARCH1|SEARCH2|SEARCH3)\b.*$/REPLACE/g'
+```
