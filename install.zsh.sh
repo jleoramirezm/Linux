@@ -161,20 +161,20 @@ sudo fc-cache -fv ~/.fonts
 
 # Install mysql-colorize
 # ==============================================
-function_message_title 'Installing Mysql-colorize'
-if [[ ! -d ~/.bash/mysql-colorize ]] ; then
-cd ~ && git clone https://github.com/horosgrisa/mysql-colorize.bash ~/.bash/mysql-colorize
-else
-function_message_title_red 'Mysql-colorize already install'
-fi
-
-FILE_ZSH="${HOME}/.zshrc"
-XXXXXBEGIN='# |::::::::::::: Mysql-colorize ::::::::::::::>>>' # |<=== Config This
-XXXXXXXEND='# |::::::::::::: Mysql-colorize ::::::::::::::<<<' # |<=== Config This
-function_delete_beetwen "\${XXXXXBEGIN}" "\${XXXXXXXEND}" "\${FILE_ZSH}"
-
-cat >> $HOME/.zshrc << "EOF"
-# |::::::::::::: Mysql-colorize ::::::::::::::>>>
-source ~/.bash/mysql-colorize/mysql-colorize.bash
-# |::::::::::::: Mysql-colorize ::::::::::::::<<<
-EOF
+# function_message_title 'Installing Mysql-colorize'
+# if [[ ! -d ~/.bash/mysql-colorize ]] ; then
+# cd ~ && git clone https://github.com/horosgrisa/mysql-colorize.bash ~/.bash/mysql-colorize
+# else
+# function_message_title_red 'Mysql-colorize already install'
+# fi
+#
+# FILE_ZSH="${HOME}/.zshrc"
+# XXXXXBEGIN='# |::::::::::::: Mysql-colorize ::::::::::::::>>>' # |<=== Config This
+# XXXXXXXEND='# |::::::::::::: Mysql-colorize ::::::::::::::<<<' # |<=== Config This
+# function_delete_beetwen "\${XXXXXBEGIN}" "\${XXXXXXXEND}" "\${FILE_ZSH}"
+#
+# cat >> $HOME/.zshrc << "EOF"
+# # |::::::::::::: Mysql-colorize ::::::::::::::>>>
+# source ~/.bash/mysql-colorize/mysql-colorize.bash
+# # |::::::::::::: Mysql-colorize ::::::::::::::<<<
+# EOF
