@@ -3,10 +3,10 @@ alias sudo='sudo '
 alias ll='ls -Xalh --color=auto'
 alias la='ls -A --color=auto'
 alias l='ls -CF --color=auto'
-alias ll='ls -gXa --color=auto'
 alias cc='clear'
 alias c='clear'
 alias ..='cd ..'
+alias oo-rsync='rsync -vharP '
 
 alias vims="sudo vim" # Run vim as super user
 alias ping='ping -c 5'      # Pings with 5 packets, not unlimited
@@ -44,8 +44,6 @@ alias oo-untar_file="tar -xzvf $1"
 
 alias oo-users="cat /etc/passwd | grep /home | cut -d: -f1"
 
-alias oo-ssh="cat ~/.ssh/config"
-
 # untar on the same folder
 oo-untar-here_file () {
     tar --strip-components=1 -zxvf "$1"
@@ -59,6 +57,8 @@ oo-wget_limit_url () {
 oo-mkdir_cd () {
     mkdir "$1" && cd "$1"
 }
+
+alias oo-ssh="cat ~/.ssh/config"
 
 oo-ssh-keygen_comm () {
     ssh-keygen -t rsa -b 2048 -f ~/.ssh/"$1" -C "$1"
