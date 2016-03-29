@@ -1,8 +1,8 @@
 #!/bin/bash
 
-sudo yum groupinstall "Development Tools"
+yum groupinstall "Development Tools"
 
-sudo yum install zlib-devel perl-ExtUtils-MakeMaker asciidoc xmlto openssl-devel
+yum -y install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils perl-ExtUtils-MakeMaker asciidoc xmlto
 
 wget -O git.zip https://github.com/git/git/archive/master.zip
 
@@ -16,4 +16,4 @@ make configure
 
 make all doc
 
-sudo make install install-doc install-html
+make install install-doc install-html
