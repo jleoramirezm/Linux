@@ -1,19 +1,21 @@
 #!/bin/bash
 
-yum groupinstall "Development Tools"
+sudo yum groupinstall "Development Tools"
 
-yum -y install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils perl-ExtUtils-MakeMaker asciidoc xmlto
+sudo yum -y install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils perl-ExtUtils-MakeMaker asciidoc xmlto
 
-wget -O git.zip https://github.com/git/git/archive/master.zip
+sudo wget -O git.tar.gz https://github.com/git/git/archive/v2.8.1.tar.gz
 
-unzip git.zip
+sudo mkdir git
 
-cd git-master
+sudo tar xzf git.tar.gz -C git --strip 1
 
-make configure
+cd git
 
-./configure --prefix=/usr/local
+sudo make prefix=/usr/local/git all
 
-make all doc
+sudo make prefix=/usr/local/git install
 
-make install install-doc install-html
+echo 'export PATH=$PATH:/usr/local/git/bin' | sudo tee --append /etc/bashrc
+
+sudo source /etc/bashrc
