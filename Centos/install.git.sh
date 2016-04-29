@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo yum groupinstall "Development Tools"
+sudo yum -y groupinstall "Development Tools"
 
 sudo yum -y install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils perl-ExtUtils-MakeMaker asciidoc xmlto
 
