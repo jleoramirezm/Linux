@@ -2,7 +2,15 @@
 
 sudo yum -y groupinstall "Development Tools"
 
-sudo yum -y install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils perl-ExtUtils-MakeMaker asciidoc xmlto
+sudo yum -y install curl-devel \
+                    expat-devel \
+                    gettext-devel \
+                    openssl-devel \
+                    zlib-devel gcc \
+                    perl-ExtUtils \
+                    perl-ExtUtils-MakeMaker \
+                    asciidoc \
+                    xmlto
 
 sudo wget -O git.tar.gz https://github.com/git/git/archive/v2.8.1.tar.gz
 
