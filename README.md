@@ -212,6 +212,14 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
     https://www.virtualbox.org/wiki/Downloads
 ```
 
+- **System Info**
+
+```bash
+sudo add-apt-repository -y ppa:dawidd0811/neofetch && \
+sudo apt update && \ 
+sudo apt -y install neofetch
+```
+
 - **Gimp 2.9**
 
 ```bash
