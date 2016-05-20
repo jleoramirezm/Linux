@@ -217,7 +217,7 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 ```bash
 sudo add-apt-repository -y ppa:dawidd0811/neofetch && \
 sudo apt update && \ 
-sudo apt -y install neofetch
+sudo apt install -y neofetch
 ```
 
 - **Gimp 2.9**
