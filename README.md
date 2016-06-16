@@ -183,21 +183,23 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 ```bash
     $
-    sudo apt-get install uget
-    sudo apt-get install inkscape
-    sudo apt-get install gparted
-    sudo apt-get install glipper
-    sudo apt-get install hardinfo
+    sudo apt-get -y install uget
+    sudo apt-get -y install inkscape
+    sudo apt-get -y install gparted
+    sudo apt-get -y install glipper
+    sudo apt-get -y install hardinfo
 ```
 - **Brackets and Atom**
 
 ```bash
-    $
-    sudo add-apt-repository -y ppa:webupd8team/brackets
-    sudo add-apt-repository -y ppa:webupd8team/atom
-    sudo apt-get update
-    sudo apt-get -y install brackets
-    sudo apt-get -y install atom
+$
+sudo add-apt-repository -y ppa:webupd8team/brackets && \
+sudo apt-get update && \
+sudo apt-get -y install brackets
+
+sudo add-apt-repository -y ppa:webupd8team/atom && \
+sudo apt-get update && \
+sudo apt-get -y install atom
 ```
 
 - **Vagrant**
@@ -214,9 +216,12 @@ https://github.com/Mayccoll/Linux/blob/master/commands.md
 
 - **System Info**
 
+https://github.com/dylanaraps/neofetch
+
 ```bash
+$
 sudo add-apt-repository -y ppa:dawidd0811/neofetch && \
-sudo apt update && \ 
+sudo apt update && \
 sudo apt install -y neofetch
 ```
 
@@ -244,10 +249,10 @@ sudo apt install -y neofetch
 - **Install Ansible**
 
 ```bash
-    $
-    sudo apt-add-repository -y ppa:ansible/ansible && \
-    sudo apt-get update && \
-    sudo apt-get install -y ansible
+$
+sudo apt-add-repository -y ppa:ansible/ansible && \
+sudo apt-get update && \
+sudo apt-get install -y ansible
 ```
 
 - **Install Docker**
@@ -297,28 +302,32 @@ sudo apt install -y neofetch
 - **Install Go For It!**
 
 ```bash
-    $
-    sudo add-apt-repository -y ppa:mank319/go-for-it && \
-    sudo apt-get update && \
-    sudo apt-get install -y go-for-it
+$
+sudo add-apt-repository -y ppa:mank319/go-for-it && \
+sudo apt-get update && \
+sudo apt-get install -y go-for-it
 ```
 
 - **Install Krita**
 
 ```bash
-    $
-    sudo add-apt-repository ppa:dimula73/krita
-    sudo apt-get update
-    sudo apt-get install krita-2.9 krita-2.9-dbg
+$
+sudo add-apt-repository ppa:dimula73/krita
+sudo apt-get update
+sudo apt-get install krita-2.9 krita-2.9-dbg
 ```
 
 - **Install inotify**
 
+monitor events
+
+https://github.com/rvoicilas/inotify-tools
+
 ```bash
-  $
-  sudo echo "deb http://us.archive.ubuntu.com/ubuntu precise main universe" >> /etc/apt/sources.list
-  sudo apt-get update
-  sudo apt-get install inotify-tools
+$
+sudo echo "deb http://us.archive.ubuntu.com/ubuntu precise main universe" >> /etc/apt/sources.list && \
+sudo apt-get update  && \
+sudo apt-get install -y inotify-tools
 ```
 
 - **Install vlc**
@@ -372,11 +381,15 @@ sudo apt install -y neofetch
 
 - **Sigil**
 
+EPUB ebook Editor
+
+https://sigil-ebook.com/
+
 ```bash
   $
-  sudo add-apt-repository -y ppa:sunab/sigil-git
-  sudo apt-get -y update
-  sudo apt-get install sigil
+  sudo add-apt-repository -y ppa:sunab/sigil-git && \
+  sudo apt-get update && \
+  sudo apt-get install -y sigil
 ```
 
 
@@ -404,7 +417,7 @@ sudo apt install -y neofetch
 
 ```bash
   $
-  sudo apt install calibre
+  sudo apt install -y calibre
 ```
 
 
