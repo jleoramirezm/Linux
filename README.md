@@ -333,17 +333,10 @@ sudo apt-get install -y inotify-tools
 - **Install vlc**
 
 ```bash
-  $
-  sudo add-apt-repository -y ppa:videolan/stable-daily
-  sudo apt-get update
-  sudo apt-get purge vlc
-  sudo apt-get install vlc-nox
-  sudo apt-get install vlc
-
-  ##
-  sudo add-apt-repository -y ppa:mc3man/trusty-media && /
-  sudo apt-get update && /
-  sudo apt-get install -y vlc
+$
+sudo add-apt-repository -y ppa:videolan/master-daily && \
+sudo apt update && \
+sudo apt install -y vlc
 ```
 
 - **wkhtmltopdf**
