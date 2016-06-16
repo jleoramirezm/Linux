@@ -428,15 +428,14 @@ https://sigil-ebook.com/
 ```
 
 
-- **php5**
+- **php 7**
 
 ```bash
   $
   sudo apt install -y \
-                    php5 \
-                    php5-dev \
-                    php-pear \
-                    php5-cli
+                    php7.0 \
+                    php7.0-fpm \
+                    php7.0-mysql
 ```
 
 
