@@ -225,6 +225,10 @@ sudo apt update && \
 sudo apt install -y neofetch
 ```
 
+- **Screamingfrog**
+
+https://www.screamingfrog.co.uk/seo-spider/
+
 - **Gimp 2.9**
 
 ```bash
